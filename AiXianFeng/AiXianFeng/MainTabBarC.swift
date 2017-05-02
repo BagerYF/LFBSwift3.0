@@ -29,7 +29,7 @@ class MainTabBarC: UITabBarController {
     private func buildMainTabBarChildViewController() {
         
         tabBarControllerAddChildViewController(childView: HomePageVC(), title: "首页", imageName: "v2_home", selectedImageName: "v2_home_r", tag: 0)
-        tabBarControllerAddChildViewController(childView: HomePageVC(), title: "闪电超市", imageName: "v2_order", selectedImageName: "v2_order_r", tag: 1)
+        tabBarControllerAddChildViewController(childView: MarketVC(), title: "闪电超市", imageName: "v2_order", selectedImageName: "v2_order_r", tag: 1)
         tabBarControllerAddChildViewController(childView: HomePageVC(), title: "购物车", imageName: "shopCart", selectedImageName: "shopCart", tag: 2)
         tabBarControllerAddChildViewController(childView: HomePageVC(), title: "我的", imageName: "v2_my", selectedImageName: "v2_my_r", tag: 3)
     }

@@ -101,6 +101,7 @@
 		0AF42CA11EB8288A00982AEB /* PageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CA01EB8288A00982AEB /* PageScrollView.swift */; };
 		0AF42CA31EB8503100982AEB /* IconImageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CA21EB8503100982AEB /* IconImageTextView.swift */; };
 		0AF42CA51EB85E1700982AEB /* LoadProgressAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CA41EB85E1700982AEB /* LoadProgressAnimationView.swift */; };
+		0AF42CA71EB8858500982AEB /* MarketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CA61EB8858500982AEB /* MarketVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,6 +272,7 @@
 		0AF42CA01EB8288A00982AEB /* PageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageScrollView.swift; sourceTree = "<group>"; };
 		0AF42CA21EB8503100982AEB /* IconImageTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconImageTextView.swift; sourceTree = "<group>"; };
 		0AF42CA41EB85E1700982AEB /* LoadProgressAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadProgressAnimationView.swift; sourceTree = "<group>"; };
+		0AF42CA61EB8858500982AEB /* MarketVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,12 +337,10 @@
 			children = (
 				0A309C921EADC29C00E81590 /* AppDelegate.swift */,
 				0A3A4D101EB1811800C0F444 /* MainTabBarC.swift */,
+				0AF42CAA1EB885FC00982AEB /* BaseView */,
 				0A3A4D0F1EB0718200C0F444 /* HomePage */,
-				0A309CC01EB0384F00E81590 /* BaseVC.swift */,
-				0A309CC11EB0384F00E81590 /* LoginVC.swift */,
-				0A309CC71EB0384F00E81590 /* WebVC.swift */,
-				0AF42CA41EB85E1700982AEB /* LoadProgressAnimationView.swift */,
-				0A3A4D121EB1BA9D00C0F444 /* Theme.swift */,
+				0AF42CA81EB8859100982AEB /* Market */,
+				0AF42CA91EB8859D00982AEB /* WebView */,
 				0A3A4D241EB57C0800C0F444 /* Extension */,
 				0A3A4C8D1EB06FE800C0F444 /* OtherSDK */,
 				0A2A05601EB06A900013CCB3 /* SettingUp */,
@@ -638,6 +638,33 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		0AF42CA81EB8859100982AEB /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				0AF42CA61EB8858500982AEB /* MarketVC.swift */,
+			);
+			name = Market;
+			sourceTree = "<group>";
+		};
+		0AF42CA91EB8859D00982AEB /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				0A309CC71EB0384F00E81590 /* WebVC.swift */,
+				0AF42CA41EB85E1700982AEB /* LoadProgressAnimationView.swift */,
+			);
+			name = WebView;
+			sourceTree = "<group>";
+		};
+		0AF42CAA1EB885FC00982AEB /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				0A309CC01EB0384F00E81590 /* BaseVC.swift */,
+				0A3A4D121EB1BA9D00C0F444 /* Theme.swift */,
+				0A309CC11EB0384F00E81590 /* LoginVC.swift */,
+			);
+			name = BaseView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -827,6 +854,7 @@
 				0A3A4CE61EB0700400C0F444 /* MJRefreshBackNormalFooter.m in Sources */,
 				0AF42C9F1EB8287300982AEB /* HotView.swift in Sources */,
 				0AF42C921EB6FE0B00982AEB /* NSObject+MJKeyValue.m in Sources */,
+				0AF42CA71EB8858500982AEB /* MarketVC.swift in Sources */,
 				0A3A4CFB1EB0700400C0F444 /* UIImage+MultiFormat.m in Sources */,
 				0A3A4CF61EB0700400C0F444 /* SDWebImageDownloaderOperation.m in Sources */,
 				0A309CCF1EB0384F00E81590 /* WebVC.swift in Sources */,
