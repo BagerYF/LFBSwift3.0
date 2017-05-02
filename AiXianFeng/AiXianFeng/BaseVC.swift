@@ -17,16 +17,16 @@ class BaseVC: UIViewController {
 
         self.view.backgroundColor = UIColor.white
         
-        if ((self.navigationController?.viewControllers.count)! > 2)
-        {
-            setBackBtn()
-        }
+//        if ((self.navigationController?.viewControllers.count)! > 2)
+//        {
+//            setBackBtn()
+//        }
     }
     
     func setBackBtn () {
         let button =  UIButton(type: .system)
         button.frame = CGRect(x: 0, y: 0, width: 30, height: 44)
-        button.setImage(UIImage(named: "back_all"), for: .normal)
+        button.setImage(UIImage(named: "v2_goback"), for: .normal)
         button.addTarget(self, action: #selector(BaseVC.back), for: .touchUpInside)
         
         let leftBarBtn = UIBarButtonItem(customView: button)

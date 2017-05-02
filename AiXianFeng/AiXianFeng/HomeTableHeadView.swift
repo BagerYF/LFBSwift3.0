@@ -52,7 +52,11 @@ class HomeTableHeadView: UIView {
         weak var tmpSelf = self
         pageScrollView = PageScrollView(frame: CGRect.zero, placeholder: UIImage(named: "v2_placeholder_full_size")!, focusImageViewClick: { (index) -> Void in
             if tmpSelf!.delegate != nil && ((tmpSelf!.delegate?.responds(to: Selector(("tableHeadView:focusImageViewClick:")))) != nil) {
-                tmpSelf?.delegate?.tableHeadView!(headView: tmpSelf!, focusImageViewClick: "")
+                let focus = tmpSelf?.focusArray![index] as! Activities
+                let path = Bundle.main.path(forResource: "FocusURL", ofType: "plist")
+                let urlArray = NSArray(contentsOfFile: path!)
+                focus.customURL = urlArray![index] as? String
+                tmpSelf?.delegate?.tableHeadView!(headView: tmpSelf!, focusImageViewClick: focus)
             }
         })
 
@@ -63,7 +67,8 @@ class HomeTableHeadView: UIView {
         weak var tmpSelf = self
         hotView = HotView(frame: CGRect.zero, iconClick: { (index) -> Void in
             if tmpSelf!.delegate != nil && ((tmpSelf!.delegate?.responds(to: Selector(("tableHeadView:iconClick:")))) != nil) {
-                tmpSelf?.delegate?.tableHeadView!(headView: tmpSelf!, iconClick: "")
+                let icon = tmpSelf?.iconsArray![index] as! Activities
+                tmpSelf?.delegate?.tableHeadView!(headView: tmpSelf!, iconClick: icon)
             }
         })
         hotView?.backgroundColor = UIColor.white
@@ -84,6 +89,6 @@ class HomeTableHeadView: UIView {
 
 // - MARK: Delegate
 @objc protocol HomeTableHeadViewDelegate: NSObjectProtocol {
-    @objc optional func tableHeadView(headView: HomeTableHeadView, focusImageViewClick url: String)
-    @objc optional func tableHeadView(headView: HomeTableHeadView, iconClick url: String)
+    @objc optional func tableHeadView(headView: HomeTableHeadView, focusImageViewClick focus: Activities)
+    @objc optional func tableHeadView(headView: HomeTableHeadView, iconClick icon: Activities)
 }

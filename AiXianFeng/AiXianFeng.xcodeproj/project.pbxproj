@@ -100,6 +100,7 @@
 		0AF42C9F1EB8287300982AEB /* HotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42C9E1EB8287300982AEB /* HotView.swift */; };
 		0AF42CA11EB8288A00982AEB /* PageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CA01EB8288A00982AEB /* PageScrollView.swift */; };
 		0AF42CA31EB8503100982AEB /* IconImageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CA21EB8503100982AEB /* IconImageTextView.swift */; };
+		0AF42CA51EB85E1700982AEB /* LoadProgressAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CA41EB85E1700982AEB /* LoadProgressAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -269,6 +270,7 @@
 		0AF42C9E1EB8287300982AEB /* HotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotView.swift; sourceTree = "<group>"; };
 		0AF42CA01EB8288A00982AEB /* PageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageScrollView.swift; sourceTree = "<group>"; };
 		0AF42CA21EB8503100982AEB /* IconImageTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconImageTextView.swift; sourceTree = "<group>"; };
+		0AF42CA41EB85E1700982AEB /* LoadProgressAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadProgressAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +339,7 @@
 				0A309CC01EB0384F00E81590 /* BaseVC.swift */,
 				0A309CC11EB0384F00E81590 /* LoginVC.swift */,
 				0A309CC71EB0384F00E81590 /* WebVC.swift */,
+				0AF42CA41EB85E1700982AEB /* LoadProgressAnimationView.swift */,
 				0A3A4D121EB1BA9D00C0F444 /* Theme.swift */,
 				0A3A4D241EB57C0800C0F444 /* Extension */,
 				0A3A4C8D1EB06FE800C0F444 /* OtherSDK */,
@@ -834,6 +837,7 @@
 				0A309CC91EB0384F00E81590 /* LoginVC.swift in Sources */,
 				0A3A4CE21EB0700400C0F444 /* MJRefreshAutoGifFooter.m in Sources */,
 				0A3A4D1F1EB57C0100C0F444 /* UIView+Extension.swift in Sources */,
+				0AF42CA51EB85E1700982AEB /* LoadProgressAnimationView.swift in Sources */,
 				0AF42CA11EB8288A00982AEB /* PageScrollView.swift in Sources */,
 				0A3A4CF11EB0700400C0F444 /* NSData+ImageContentType.m in Sources */,
 				0AF42C4A1EB5C68D00982AEB /* FreshHot.swift in Sources */,

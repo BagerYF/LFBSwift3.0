@@ -20,6 +20,11 @@ class HomePageVC: BaseVC {
     var activityArray: Array<Any>?
     var goodsArray: Array<Any>?
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.barTintColor = YFMainYellowColor
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -103,20 +108,16 @@ class HomePageVC: BaseVC {
 // MARK:- HomeHeadViewDelegate TableHeadViewAction
 
 extension HomePageVC: HomeTableHeadViewDelegate {
-    func tableHeadView(headView: HomeTableHeadView, focusImageViewClick url: String) {
-//        if headData?.data?.focus?.count > 0 {
-//            let path = NSBundle.mainBundle().pathForResource("FocusURL", ofType: "plist")
-//            let array = NSArray(contentsOfFile: path!)
-//            let webVC = WebViewController(navigationTitle: headData!.data!.focus![index].name!, urlStr: array![index] as! String)
-//            navigationController?.pushViewController(webVC, animated: true)
-//        }
+    func tableHeadView(headView: HomeTableHeadView, focusImageViewClick focus: Activities) {
+        let webVC = WebVC(navigationTitle: focus.name!, urlStr: focus.customURL!)
+        webVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(webVC, animated: true)
     }
     
-    func tableHeadView(headView: HomeTableHeadView, url : String) {
-//        if headData?.data?.icons?.count > 0 {
-//            let webVC = WebViewController(navigationTitle: headData!.data!.icons![index].name!, urlStr: headData!.data!.icons![index].customURL!)
-//            navigationController?.pushViewController(webVC, animated: true)
-//        }
+    func tableHeadView(headView: HomeTableHeadView, iconClick icon : Activities) {
+        let webVC = WebVC(navigationTitle: icon.name!, urlStr: icon.customURL!)
+        webVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(webVC, animated: true)
     }
 }
 
@@ -260,13 +261,15 @@ extension HomePageVC: UICollectionViewDelegate, UICollectionViewDataSource, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        if indexPath.section == 0 {
-//            let webVC = WebViewController(navigationTitle: headData!.data!.activities![indexPath.row].name!, urlStr: headData!.data!.activities![indexPath.row].customURL!)
-//            navigationController?.pushViewController(webVC, animated: true)
-//        } else {
+        if indexPath.section == 0 {
+            let webVC = WebVC(navigationTitle: (activityArray![indexPath.row] as! Activities).name!, urlStr: (activityArray![indexPath.row] as! Activities).customURL!)
+            webVC.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(webVC, animated: true)
+            
+        } else {
 //            let productVC = ProductDetailViewController(goods: freshHot!.data![indexPath.row])
 //            navigationController?.pushViewController(productVC, animated: true)
-//        }
+        }
     }
 }
 
