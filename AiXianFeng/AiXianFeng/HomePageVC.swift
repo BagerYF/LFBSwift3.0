@@ -11,30 +11,51 @@ import UIKit
 class HomePageVC: BaseVC {
     
     var flag: Int = -1
-//    var headView: HomeTableHeadView?
+    var headView: HomeTableHeadView?
     var collectionView: UICollectionView?
     var lastContentOffsetY: CGFloat = 0
     var isAnimation: Bool = false
     var headData: HeadResources?
     var freshHot: FreshHot?
     var activityArray: Array<Any>?
-    var iconsArray: Array<Any>?
-    var focusArray: Array<Any>?
     var goodsArray: Array<Any>?
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addHomeNotification()
+        
         initData()
+        
         buildCollectionView()
+        
+        buildTableHeadView()
     }
     
     private func initData() {
         activityArray = HeadResources.loadHomeHeadData(type: 1)
-        iconsArray = HeadResources.loadHomeHeadData(type: 2)
-        focusArray = HeadResources.loadHomeHeadData(type: 3)
         goodsArray = FreshHot.loadFreshHotData()
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    // MARK:- addNotifiation
+    func addHomeNotification() {
+        NotificationCenter.default.addObserver(self, selector:#selector(homeTableHeadViewHeightDidChange(noti:)), name: NSNotification.Name(rawValue: HomeTableHeadViewHeightDidChange), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: Selector(("homeTableHeadViewHeightDidChange")), name: NSNotification.Name(rawValue: HomeTableHeadViewHeightDidChange), object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "goodsInventoryProblem:", name: HomeGoodsInventoryProblem, object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "shopCarBuyProductNumberDidChange", name: LFBShopCarBuyProductNumberDidChangeNotification, object: nil)
+    }
+    
+    // MARK: Notifiation Action
+    func homeTableHeadViewHeightDidChange(noti: NSNotification) {
+        collectionView!.contentInset = UIEdgeInsetsMake(noti.object as! CGFloat + 64, 0, NavigationH, 0)
+        collectionView!.setContentOffset(CGPoint(x: 0, y: -(collectionView!.contentInset.top)), animated: false)
+        lastContentOffsetY = (collectionView?.contentOffset.y)!
+    }
+
     
     private func buildCollectionView() {
         let layout = UICollectionViewFlowLayout()
@@ -71,7 +92,34 @@ class HomePageVC: BaseVC {
             }
         }
     }
+    
+    func buildTableHeadView() {
+        headView = HomeTableHeadView()
+        headView?.delegate = self
+        collectionView?.addSubview(headView!)
+    }
 }
+
+// MARK:- HomeHeadViewDelegate TableHeadViewAction
+
+extension HomePageVC: HomeTableHeadViewDelegate {
+    func tableHeadView(headView: HomeTableHeadView, focusImageViewClick url: String) {
+//        if headData?.data?.focus?.count > 0 {
+//            let path = NSBundle.mainBundle().pathForResource("FocusURL", ofType: "plist")
+//            let array = NSArray(contentsOfFile: path!)
+//            let webVC = WebViewController(navigationTitle: headData!.data!.focus![index].name!, urlStr: array![index] as! String)
+//            navigationController?.pushViewController(webVC, animated: true)
+//        }
+    }
+    
+    func tableHeadView(headView: HomeTableHeadView, url : String) {
+//        if headData?.data?.icons?.count > 0 {
+//            let webVC = WebViewController(navigationTitle: headData!.data!.icons![index].name!, urlStr: headData!.data!.icons![index].customURL!)
+//            navigationController?.pushViewController(webVC, animated: true)
+//        }
+    }
+}
+
 
 extension HomePageVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
