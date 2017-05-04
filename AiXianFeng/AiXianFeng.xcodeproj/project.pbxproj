@@ -102,6 +102,11 @@
 		0AF42CA31EB8503100982AEB /* IconImageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CA21EB8503100982AEB /* IconImageTextView.swift */; };
 		0AF42CA51EB85E1700982AEB /* LoadProgressAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CA41EB85E1700982AEB /* LoadProgressAnimationView.swift */; };
 		0AF42CA71EB8858500982AEB /* MarketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CA61EB8858500982AEB /* MarketVC.swift */; };
+		0AF42CAC1EB96BFB00982AEB /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CAB1EB96BFB00982AEB /* ProductsViewController.swift */; };
+		0AF42CAE1EB96C0900982AEB /* SupermarketHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CAD1EB96C0900982AEB /* SupermarketHeadView.swift */; };
+		0AF42CB01EB96C0E00982AEB /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CAF1EB96C0E00982AEB /* ProductCell.swift */; };
+		0AF42CB21EB96C1400982AEB /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CB11EB96C1400982AEB /* CategoryCell.swift */; };
+		0AF42CB41EB96C3B00982AEB /* Supermarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42CB31EB96C3B00982AEB /* Supermarket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -273,6 +278,11 @@
 		0AF42CA21EB8503100982AEB /* IconImageTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconImageTextView.swift; sourceTree = "<group>"; };
 		0AF42CA41EB85E1700982AEB /* LoadProgressAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadProgressAnimationView.swift; sourceTree = "<group>"; };
 		0AF42CA61EB8858500982AEB /* MarketVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketVC.swift; sourceTree = "<group>"; };
+		0AF42CAB1EB96BFB00982AEB /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		0AF42CAD1EB96C0900982AEB /* SupermarketHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupermarketHeadView.swift; sourceTree = "<group>"; };
+		0AF42CAF1EB96C0E00982AEB /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		0AF42CB11EB96C1400982AEB /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		0AF42CB31EB96C3B00982AEB /* Supermarket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Supermarket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -642,6 +652,11 @@
 			isa = PBXGroup;
 			children = (
 				0AF42CA61EB8858500982AEB /* MarketVC.swift */,
+				0AF42CAB1EB96BFB00982AEB /* ProductsViewController.swift */,
+				0AF42CAD1EB96C0900982AEB /* SupermarketHeadView.swift */,
+				0AF42CAF1EB96C0E00982AEB /* ProductCell.swift */,
+				0AF42CB11EB96C1400982AEB /* CategoryCell.swift */,
+				0AF42CB31EB96C3B00982AEB /* Supermarket.swift */,
 			);
 			name = Market;
 			sourceTree = "<group>";
@@ -832,20 +847,24 @@
 				0AF42C931EB6FE0B00982AEB /* NSObject+MJProperty.m in Sources */,
 				0A3A4CF51EB0700400C0F444 /* SDWebImageDownloader.m in Sources */,
 				0A309CC81EB0384F00E81590 /* BaseVC.swift in Sources */,
+				0AF42CAE1EB96C0900982AEB /* SupermarketHeadView.swift in Sources */,
 				0AF42C941EB6FE0B00982AEB /* NSString+MJExtension.m in Sources */,
 				0A3A4CF31EB0700400C0F444 /* SDWebImageCompat.m in Sources */,
 				0A3A4CEA1EB0700400C0F444 /* MJRefreshStateHeader.m in Sources */,
 				0AF42C8F1EB6FE0B00982AEB /* MJPropertyType.m in Sources */,
 				0AF42C721EB6EF5000982AEB /* SwiftyJSON.swift in Sources */,
 				0A3A4D0D1EB070BB00C0F444 /* SVProgressHUD.m in Sources */,
+				0AF42CB01EB96C0E00982AEB /* ProductCell.swift in Sources */,
 				0AF42C8B1EB6FE0B00982AEB /* MJExtensionConst.m in Sources */,
 				0AF42C8E1EB6FE0B00982AEB /* MJPropertyKey.m in Sources */,
 				0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */,
 				0AF42C961EB75F2100982AEB /* DiscountPriceView.swift in Sources */,
 				0A3A4D221EB57C0100C0F444 /* String + Extension.swift in Sources */,
 				0A3A4CEF1EB0700400C0F444 /* UIView+MJExtension.m in Sources */,
+				0AF42CAC1EB96BFB00982AEB /* ProductsViewController.swift in Sources */,
 				0AF42C981EB7654000982AEB /* HomeCollectionFooterView.swift in Sources */,
 				0A3A4CFF1EB0700400C0F444 /* UIView+WebCacheOperation.m in Sources */,
+				0AF42CB41EB96C3B00982AEB /* Supermarket.swift in Sources */,
 				0A3A4CE81EB0700400C0F444 /* MJRefreshGifHeader.m in Sources */,
 				0A3A4CED1EB0700400C0F444 /* UIScrollView+MJExtension.m in Sources */,
 				0A3A4CFE1EB0700400C0F444 /* UIImageView+WebCache.m in Sources */,
@@ -856,6 +875,7 @@
 				0AF42C921EB6FE0B00982AEB /* NSObject+MJKeyValue.m in Sources */,
 				0AF42CA71EB8858500982AEB /* MarketVC.swift in Sources */,
 				0A3A4CFB1EB0700400C0F444 /* UIImage+MultiFormat.m in Sources */,
+				0AF42CB21EB96C1400982AEB /* CategoryCell.swift in Sources */,
 				0A3A4CF61EB0700400C0F444 /* SDWebImageDownloaderOperation.m in Sources */,
 				0A309CCF1EB0384F00E81590 /* WebVC.swift in Sources */,
 				0A3A4CFD1EB0700400C0F444 /* UIImageView+HighlightedWebCache.m in Sources */,
