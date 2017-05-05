@@ -68,15 +68,17 @@ class MarketVC: BaseVC {
     
     // MARK:- Creat UI
     private func bulidCategoryTableView() {
-        categoryTableView = UITableView(frame: CGRect(x: 0, y: 0, width: kScreenWidth * 0.25, height: kScreenHeight), style: .plain)
+        categoryTableView = UITableView(frame: CGRect(x: 0, y: 0, width: kScreenWidth * 0.25, height: kScreenHeight - 64), style: .plain)
         categoryTableView.backgroundColor = YFGlobalBackgroundColor
         categoryTableView.delegate = self
         categoryTableView.dataSource = self
         categoryTableView.showsHorizontalScrollIndicator = false
         categoryTableView.showsVerticalScrollIndicator = false
-        categoryTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: NavigationH, right: 0)
 //        categoryTableView.isHidden = true;
         view.addSubview(categoryTableView)
+        
+        let footerView = UIView()
+        categoryTableView.tableFooterView = footerView;
     }
     
     private func bulidProductsViewController() {
@@ -162,7 +164,6 @@ extension MarketVC: UITableViewDelegate, UITableViewDataSource {
             productsVC.categortsSelectedIndexPath = indexPath as NSIndexPath
         }
     }
-    
 }
 
 // MARK: - SupermarketViewController
@@ -173,6 +174,6 @@ extension MarketVC: ProductsViewControllerDelegate {
     }
     
     func willDisplayHeaderView(section: Int) {
-        categoryTableView.selectRow(at: IndexPath(row: section, section: 1), animated: true, scrollPosition: .middle)
+        categoryTableView.selectRow(at: IndexPath(row: section, section: 0), animated: true, scrollPosition: .middle)
     }
 }

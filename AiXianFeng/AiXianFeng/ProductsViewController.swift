@@ -44,7 +44,7 @@ class ProductsViewController: BaseVC {
         
 //        NSNotificationCenter.defaultCenter().addObserver(self, selector: "shopCarBuyProductNumberDidChange", name: LFBShopCarBuyProductNumberDidChangeNotification, object: nil)
         
-        view = UIView(frame: CGRect(x: kScreenWidth * 0.25, y: 0, width: kScreenWidth * 0.75, height: kScreenHeight - NavigationH))
+        view = UIView(frame: CGRect(x: kScreenWidth * 0.25, y: 0, width: kScreenWidth * 0.75, height: kScreenHeight - 64))
         buildProductsTableView()
     }
     
@@ -102,8 +102,11 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource {
         return 0
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return categoryPArray.count
+    func numberOfSections(in tableView: UITableView) -> Int {
+        if categoryPArray != nil {
+            return categoryPArray.count
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -139,14 +142,13 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {
-        
-        if delegate != nil && delegate!.responds(to: Selector(("didEndDisplayingHeaderView:"))) && isScrollDown {
+        if delegate != nil && isScrollDown {
             delegate!.didEndDisplayingHeaderView!(section: section)
         }
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        if delegate != nil && delegate!.responds(to: Selector(("willDisplayHeaderView:"))) && !isScrollDown {
+        if delegate != nil  && !isScrollDown {
             delegate!.willDisplayHeaderView!(section: section)
         }
     }

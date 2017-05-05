@@ -32,6 +32,7 @@ class MainTabBarC: UITabBarController {
         tabBarControllerAddChildViewController(childView: MarketVC(), title: "闪电超市", imageName: "v2_order", selectedImageName: "v2_order_r", tag: 1)
         tabBarControllerAddChildViewController(childView: HomePageVC(), title: "购物车", imageName: "shopCart", selectedImageName: "shopCart", tag: 2)
         tabBarControllerAddChildViewController(childView: HomePageVC(), title: "我的", imageName: "v2_my", selectedImageName: "v2_my_r", tag: 3)
+        selectedIndex = 1
     }
     
     private func tabBarControllerAddChildViewController(childView: UIViewController, title: String, imageName: String, selectedImageName: String, tag: Int) {
@@ -43,6 +44,7 @@ class MainTabBarC: UITabBarController {
         let navigationVC = UINavigationController(rootViewController:childView)
         navigationVC.navigationBar.barTintColor = YFMainYellowColor
         navigationVC.navigationBar.tintColor = UIColor.black
+        navigationVC.navigationBar.isTranslucent = false
         addChildViewController(navigationVC)
     }
     

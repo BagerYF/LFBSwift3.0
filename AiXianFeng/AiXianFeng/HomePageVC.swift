@@ -48,6 +48,7 @@ class HomePageVC: BaseVC {
     
     // MARK:- addNotifiation
     func addHomeNotification() {
+        
         NotificationCenter.default.addObserver(self, selector:#selector(homeTableHeadViewHeightDidChange(noti:)), name: NSNotification.Name(rawValue: HomeTableHeadViewHeightDidChange), object: nil)
 //        NotificationCenter.default.addObserver(self, selector: Selector(("homeTableHeadViewHeightDidChange")), name: NSNotification.Name(rawValue: HomeTableHeadViewHeightDidChange), object: nil)
 //        NSNotificationCenter.defaultCenter().addObserver(self, selector: "goodsInventoryProblem:", name: HomeGoodsInventoryProblem, object: nil)
@@ -56,7 +57,7 @@ class HomePageVC: BaseVC {
     
     // MARK: Notifiation Action
     func homeTableHeadViewHeightDidChange(noti: NSNotification) {
-        collectionView!.contentInset = UIEdgeInsetsMake(noti.object as! CGFloat + 64, 0, NavigationH, 0)
+        collectionView!.contentInset = UIEdgeInsetsMake(noti.object as! CGFloat, 0, NavigationH, 0)
         collectionView!.setContentOffset(CGPoint(x: 0, y: -(collectionView!.contentInset.top)), animated: false)
         lastContentOffsetY = (collectionView?.contentOffset.y)!
     }
@@ -69,7 +70,7 @@ class HomePageVC: BaseVC {
         layout.sectionInset = UIEdgeInsets(top: 0, left: HomeCollectionViewCellMargin, bottom: 0, right: HomeCollectionViewCellMargin)
         layout.headerReferenceSize = CGSize(width: 0, height: 10)
         
-        collectionView = UICollectionView(frame: CGRect(x : 0, y : 0, width : kScreenWidth, height : kScreenHeight), collectionViewLayout: layout)
+        collectionView = UICollectionView(frame: CGRect(x : 0, y : 0, width : kScreenWidth, height : kScreenHeight - 64), collectionViewLayout: layout)
         collectionView?.delegate = self
         collectionView?.dataSource = self
         collectionView?.backgroundColor = YFGlobalBackgroundColor
