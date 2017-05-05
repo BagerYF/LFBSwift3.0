@@ -268,8 +268,9 @@ extension HomePageVC: UICollectionViewDelegate, UICollectionViewDataSource, UICo
             navigationController?.pushViewController(webVC, animated: true)
             
         } else {
-//            let productVC = ProductDetailViewController(goods: freshHot!.data![indexPath.row])
-//            navigationController?.pushViewController(productVC, animated: true)
+            let productVC = ProductDetailVC(goods: goodsArray![indexPath.row] as! Goods)
+            productVC.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(productVC, animated: true)
         }
     }
 }
