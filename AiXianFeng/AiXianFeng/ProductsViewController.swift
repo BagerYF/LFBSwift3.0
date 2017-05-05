@@ -154,9 +154,12 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let goods = goodsArr![indexPath.section][indexPath.row]
-//        let productDetailVC = ProductDetailViewController(goods: goods)
-//        navigationController?.pushViewController(productDetailVC, animated: true)
+        let categoryStr = (categoryPArray![indexPath.section] as! Categorie).id
+        let tempArr : Array<Any> = categoryPDic[categoryStr!] as! Array
+        let goods = tempArr[indexPath.row]
+        let productDetailVC = ProductDetailVC(goods: goods as! Goods)
+        productDetailVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(productDetailVC, animated: true)
     }
 }
 

@@ -38,7 +38,7 @@ class ProductDetailVC: BaseVC {
         view.addSubview(scrollView!)
         
         productImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 400))
-        productImageView?.contentMode = UIViewContentMode.scaleAspectFill
+        productImageView?.contentMode = UIViewContentMode.scaleAspectFit
         scrollView!.addSubview(productImageView!)
         
         buildLineView(frame: CGRect(x: 0, y: (productImageView?.y)! + (productImageView?.height)! - 1, width: kScreenWidth, height: 1), addView: productImageView!)
