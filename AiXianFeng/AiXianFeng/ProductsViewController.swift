@@ -26,8 +26,8 @@ class ProductsViewController: BaseVC {
     }
     
     func reloadData(array : Array<Any>, dataDic : Dictionary<String, Array<Goods>>) {
-        categoryPArray = Supermarket.loadSupermarketData().0;
-        categoryPDic = Supermarket.loadSupermarketData().1;
+        categoryPArray = array
+        categoryPDic = dataDic
         productsTableView?.reloadData()
     }
     
@@ -108,9 +108,11 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ProductCell.cellWithTableView(tableView: tableView)
-//        let goods = goodsArr![indexPath.section][indexPath.row]
-//        cell.goods = goods
-//        
+        let categoryStr = (categoryPArray![indexPath.section] as! Categorie).id
+        let tempArr : Array<Any> = categoryPDic[categoryStr!] as! Array
+        let goods = tempArr[indexPath.row]
+        cell.goods = goods as? Goods
+//
 //        weak var tmpSelf = self
 //        cell.addProductClick = { (imageView) -> () in
 //            tmpSelf?.addProductsAnimation(imageView)
@@ -129,9 +131,9 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headView = tableView.dequeueReusableHeaderFooterView(withIdentifier: headViewIdentifier) as! SupermarketHeadView
-//        if supermarketData?.data?.categories?.count > 0 && supermarketData!.data!.categories![section].name != nil {
-//            headView.titleLabel.text = supermarketData!.data!.categories![section].name
-//        }
+        if categoryPArray.count > 0 {
+            headView.titleLabel.text = (categoryPArray[section] as? Categorie)?.name
+        }
         
         return headView
     }
