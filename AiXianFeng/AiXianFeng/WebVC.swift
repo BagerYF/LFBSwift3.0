@@ -11,9 +11,9 @@ import UIKit
 
 class WebVC: BaseVC {
     
-    var webView = UIWebView(frame: ScreenBounds)
+    var webView = UIWebView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight - 64))
     var urlStr: String?
-    let loadProgressAnimationView: LoadProgressAnimationView = LoadProgressAnimationView(frame: CGRect(x: 0, y: 64, width: kScreenWidth, height: 3))
+    let loadProgressAnimationView: LoadProgressAnimationView = LoadProgressAnimationView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 3))
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)

@@ -73,7 +73,7 @@ class AboltAuthorViewController: BaseVC {
             btn.tag = i
             btn.titleLabel?.font = UIFont.systemFont(ofSize: 10)
             btn.frame = CGRect(x: CGFloat(i) * ((kScreenWidth - btnW * 2) / 3) + (CGFloat(i) + 1) * btnW, y: blogLabel.y + blogLabel.height + 10, width: btnW, height: 30)
-            btn.addTarget(self, action: Selector(("btnClick:")), for: UIControlEvents.touchUpInside)
+            btn.addTarget(self, action: #selector(btnClick(sender:)), for: UIControlEvents.touchUpInside)
             btn.setTitleColor(UIColor.black, for: .normal)
             view.addSubview(btn)
         }
@@ -98,7 +98,7 @@ class AboltAuthorViewController: BaseVC {
         label.tag = tag
         view.addSubview(label)
         
-        let tap = UITapGestureRecognizer(target: self, action: Selector(("textLabelClick:")))
+        let tap = UITapGestureRecognizer(target: self, action:#selector(textLabelClick(tap:)))
         label.addGestureRecognizer(tap)
     }
     
@@ -115,11 +115,19 @@ class AboltAuthorViewController: BaseVC {
     
     func btnClick(sender: UIButton) {
         switch sender.tag {
-        case 0: UIApplication.shared.openURL(URL(string: GitHubURLString)! as URL)
+        case 0: if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string: GitHubURLString)!, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(URL(string: GitHubURLString)! as URL)
+        }
             break
-        case 1: UIApplication.shared.openURL(URL(string: BlogURLString)! as URL)
+        case 1: if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string: BlogURLString)!, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(URL(string: BlogURLString)! as URL)
+        }
             break
-        default: 
+        default:
             break
         }
     }
