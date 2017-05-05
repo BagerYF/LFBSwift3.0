@@ -46,9 +46,8 @@ public let CouponUserRuleURLString = "http://m.beequick.cn/show/webview/p/coupon
 public let LFBCachePath: String = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last!
 
 // MARK: - AuthorURL
-public let GitHubURLString: String = "https://github.com/ZhongTaoTian"
-public let SinaWeiBoURLString: String = "http://weibo.com/tianzhongtao"
-public let BlogURLString: String = "http://www.jianshu.com/users/5fe7513c7a57/latest_articles"
+public let GitHubURLString: String = "https://github.com/BagerYF"
+public let BlogURLString: String = "http://www.jianshu.com/u/25c75c8055c6"
 
 // MARK: - 常用颜色
 public let YFGlobalBackgroundColor = UIColor.init(colorLiteralRed: 239 / 255.0, green: 239 / 255.0, blue: 239 / 255.0, alpha: 1)

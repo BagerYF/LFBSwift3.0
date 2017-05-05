@@ -11,6 +11,12 @@
 		0A1ED9731EBC3C1E00F0AC45 /* YellowShopCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9721EBC3C1E00F0AC45 /* YellowShopCarView.swift */; };
 		0A1ED9751EBC3C9D00F0AC45 /* ShopCarRedDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9741EBC3C9D00F0AC45 /* ShopCarRedDotView.swift */; };
 		0A1ED9781EBC56BB00F0AC45 /* MineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9771EBC56BB00F0AC45 /* MineVC.swift */; };
+		0A1ED97A1EBC57A600F0AC45 /* MineTabeHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9791EBC57A600F0AC45 /* MineTabeHeadView.swift */; };
+		0A1ED97C1EBC57B000F0AC45 /* MineHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED97B1EBC57B000F0AC45 /* MineHeadView.swift */; };
+		0A1ED97E1EBC57BD00F0AC45 /* MineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED97D1EBC57BD00F0AC45 /* MineCell.swift */; };
+		0A1ED9801EBC57E800F0AC45 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED97F1EBC57E800F0AC45 /* SettingViewController.swift */; };
+		0A1ED9821EBC5EED00F0AC45 /* UpImageDownTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9811EBC5EED00F0AC45 /* UpImageDownTextButton.swift */; };
+		0A1ED9851EBC643000F0AC45 /* AboltAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9841EBC643000F0AC45 /* AboltAuthorViewController.swift */; };
 		0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */; };
 		0A309C931EADC29C00E81590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A309C921EADC29C00E81590 /* AppDelegate.swift */; };
 		0A309C981EADC29C00E81590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A309C961EADC29C00E81590 /* Main.storyboard */; };
@@ -135,6 +141,12 @@
 		0A1ED9721EBC3C1E00F0AC45 /* YellowShopCarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellowShopCarView.swift; sourceTree = "<group>"; };
 		0A1ED9741EBC3C9D00F0AC45 /* ShopCarRedDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCarRedDotView.swift; sourceTree = "<group>"; };
 		0A1ED9771EBC56BB00F0AC45 /* MineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineVC.swift; sourceTree = "<group>"; };
+		0A1ED9791EBC57A600F0AC45 /* MineTabeHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineTabeHeadView.swift; sourceTree = "<group>"; };
+		0A1ED97B1EBC57B000F0AC45 /* MineHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHeadView.swift; sourceTree = "<group>"; };
+		0A1ED97D1EBC57BD00F0AC45 /* MineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineCell.swift; sourceTree = "<group>"; };
+		0A1ED97F1EBC57E800F0AC45 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		0A1ED9811EBC5EED00F0AC45 /* UpImageDownTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpImageDownTextButton.swift; sourceTree = "<group>"; };
+		0A1ED9841EBC643000F0AC45 /* AboltAuthorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboltAuthorViewController.swift; sourceTree = "<group>"; };
 		0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		0A309C8F1EADC29C00E81590 /* AiXianFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiXianFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A309C921EADC29C00E81590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -332,8 +344,22 @@
 			isa = PBXGroup;
 			children = (
 				0A1ED9771EBC56BB00F0AC45 /* MineVC.swift */,
+				0A1ED97B1EBC57B000F0AC45 /* MineHeadView.swift */,
+				0A1ED9791EBC57A600F0AC45 /* MineTabeHeadView.swift */,
+				0A1ED97D1EBC57BD00F0AC45 /* MineCell.swift */,
+				0A1ED9811EBC5EED00F0AC45 /* UpImageDownTextButton.swift */,
+				0A1ED9831EBC640D00F0AC45 /* Setting */,
 			);
 			name = Mine;
+			sourceTree = "<group>";
+		};
+		0A1ED9831EBC640D00F0AC45 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0A1ED97F1EBC57E800F0AC45 /* SettingViewController.swift */,
+				0A1ED9841EBC643000F0AC45 /* AboltAuthorViewController.swift */,
+			);
+			name = Setting;
 			sourceTree = "<group>";
 		};
 		0A2A05601EB06A900013CCB3 /* SettingUp */ = {
@@ -878,8 +904,12 @@
 				0AF42CAE1EB96C0900982AEB /* SupermarketHeadView.swift in Sources */,
 				0AF42C941EB6FE0B00982AEB /* NSString+MJExtension.m in Sources */,
 				0A3A4CF31EB0700400C0F444 /* SDWebImageCompat.m in Sources */,
+				0A1ED9821EBC5EED00F0AC45 /* UpImageDownTextButton.swift in Sources */,
+				0A1ED9801EBC57E800F0AC45 /* SettingViewController.swift in Sources */,
 				0A3A4CEA1EB0700400C0F444 /* MJRefreshStateHeader.m in Sources */,
+				0A1ED97C1EBC57B000F0AC45 /* MineHeadView.swift in Sources */,
 				0AF42C8F1EB6FE0B00982AEB /* MJPropertyType.m in Sources */,
+				0A1ED9851EBC643000F0AC45 /* AboltAuthorViewController.swift in Sources */,
 				0AF42C721EB6EF5000982AEB /* SwiftyJSON.swift in Sources */,
 				0A3A4D0D1EB070BB00C0F444 /* SVProgressHUD.m in Sources */,
 				0AF42CB01EB96C0E00982AEB /* ProductCell.swift in Sources */,
@@ -910,6 +940,7 @@
 				0A309CCF1EB0384F00E81590 /* WebVC.swift in Sources */,
 				0A3A4CFD1EB0700400C0F444 /* UIImageView+HighlightedWebCache.m in Sources */,
 				0A3A4CDF1EB0700400C0F444 /* MJRefreshComponent.m in Sources */,
+				0A1ED97E1EBC57BD00F0AC45 /* MineCell.swift in Sources */,
 				0AF42C9A1EB76A4200982AEB /* HomeTableHeadView.swift in Sources */,
 				0A3A4CE31EB0700400C0F444 /* MJRefreshAutoNormalFooter.m in Sources */,
 				0A309CC91EB0384F00E81590 /* LoginVC.swift in Sources */,
@@ -930,6 +961,7 @@
 				0A3A4CEC1EB0700400C0F444 /* MJRefreshConst.m in Sources */,
 				0AF42C8D1EB6FE0B00982AEB /* MJProperty.m in Sources */,
 				0A3A4D111EB1811800C0F444 /* MainTabBarC.swift in Sources */,
+				0A1ED97A1EBC57A600F0AC45 /* MineTabeHeadView.swift in Sources */,
 				0A3A4CE51EB0700400C0F444 /* MJRefreshBackGifFooter.m in Sources */,
 				0A1ED9781EBC56BB00F0AC45 /* MineVC.swift in Sources */,
 				0AF42CA31EB8503100982AEB /* IconImageTextView.swift in Sources */,

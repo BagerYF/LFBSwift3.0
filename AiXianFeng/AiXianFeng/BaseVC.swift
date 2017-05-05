@@ -15,8 +15,8 @@ class BaseVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.white
-        
+        view.backgroundColor = YFGlobalBackgroundColor
+
 //        if ((self.navigationController?.viewControllers.count)! > 2)
 //        {
 //            setBackBtn()
