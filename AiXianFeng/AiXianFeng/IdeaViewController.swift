@@ -66,16 +66,16 @@ class IdeaViewController: BaseVC {
     func rightItemClick() {
         
         if iderTextView.text == nil || 0 == iderTextView.text?.characters.count {
-//            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "请输入意见,心里空空的")
+            ProgressHUDManager.showImage(image: UIImage(named: "v2_orderSuccess")!, status: "请输入意见,心里空空的")
         } else if (iderTextView.text?.characters.count)! < 5 {
-//            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "请输入超过5个字啊亲~")
+            ProgressHUDManager.showImage(image: UIImage(named: "v2_orderSuccess")!, status: "请输入超过5个字啊亲~")
         } else if (iderTextView.text?.characters.count)! >= 300 {
-//            ProgressHUDManager.showImage(UIImage(named: "v2_orderSuccess")!, status: "说的太多了,臣妾做不到啊~")
+            ProgressHUDManager.showImage(image: UIImage(named: "v2_orderSuccess")!, status: "说的太多了,臣妾做不到啊~")
         } else {
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: { 
                 self.navigationController?.popViewController(animated: true)
                 self.mineVC?.iderVCSendIderSuccess = true
-//                ProgressHUDManager.dismiss()
+                ProgressHUDManager.dismiss()
             })
         }
     }

@@ -11,12 +11,12 @@ import UIKit
 
 class MineVC: BaseVC {
     
-    private var headView: MineHeadView!
-    private var tableView: UITableView!
-    private var headViewHeight: CGFloat = 200
-    private var tableHeadView: MineTabeHeadView!
-    private var couponNum: Int = 0
-//    private let shareActionSheet: LFBActionSheet = LFBActionSheet()
+    var headView: MineHeadView!
+    var tableView: UITableView!
+    var headViewHeight: CGFloat = 200
+    var tableHeadView: MineTabeHeadView!
+    var couponNum: Int = 0
+    let shareActionSheet: LFBActionSheet = LFBActionSheet()
     
     // MARK: Flag
     var iderVCSendIderSuccess = false
@@ -162,13 +162,14 @@ extension MineVC: UITableViewDelegate, UITableViewDataSource {
 //                let adressVC = MyAdressViewController()
 //                navigationController?.pushViewController(adressVC, animated: true)
             } else {
-//                let myShopVC = MyShopViewController()
-//                navigationController?.pushViewController(myShopVC, animated: true)
+                let myShopVC = MyShopViewController()
+                myShopVC.hidesBottomBarWhenPushed = true
+                navigationController?.pushViewController(myShopVC, animated: true)
             }
         } else if 1 == indexPath.section {
-//            shareActionSheet.showActionSheetViewShowInView(view) { (shareType) -> () in
-//                ShareManager.shareToShareType(shareType, vc: self)
-//            }
+            shareActionSheet.showActionSheetViewShowInView(inView: view) { (shareType) -> () in
+                ShareManager.shareToShareType(shareType: shareType, vc: self)
+            }
         } else if 2 == indexPath.section {
             if 0 == indexPath.row {
                 let helpVc = HelpViewController()

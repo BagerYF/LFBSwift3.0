@@ -54,6 +54,7 @@
 		0A1ED9F31EBDD33400F0AC45 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1ED9F21EBDD33400F0AC45 /* libstdc++.tbd */; };
 		0A1ED9F51EBDD33C00F0AC45 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1ED9F41EBDD33C00F0AC45 /* libsqlite3.tbd */; };
 		0A1ED9F71EBDD34600F0AC45 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1ED9F61EBDD34600F0AC45 /* libiconv.tbd */; };
+		0A1ED9FC1EBDD57000F0AC45 /* MyShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9FB1EBDD57000F0AC45 /* MyShopViewController.swift */; };
 		0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */; };
 		0A309C931EADC29C00E81590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A309C921EADC29C00E81590 /* AppDelegate.swift */; };
 		0A309C981EADC29C00E81590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A309C961EADC29C00E81590 /* Main.storyboard */; };
@@ -248,6 +249,7 @@
 		0A1ED9F21EBDD33400F0AC45 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		0A1ED9F41EBDD33C00F0AC45 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0A1ED9F61EBDD34600F0AC45 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		0A1ED9FB1EBDD57000F0AC45 /* MyShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopViewController.swift; sourceTree = "<group>"; };
 		0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		0A309C8F1EADC29C00E81590 /* AiXianFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiXianFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A309C921EADC29C00E81590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -460,8 +462,8 @@
 			isa = PBXGroup;
 			children = (
 				0A1ED9771EBC56BB00F0AC45 /* MineVC.swift */,
-				0A1ED98D1EBC7C0900F0AC45 /* IdeaViewController.swift */,
-				0A1ED9951EBDCCC500F0AC45 /* PlaceholderTextView.swift */,
+				0A1ED9FB1EBDD57000F0AC45 /* MyShopViewController.swift */,
+				0A1ED9F81EBDD51700F0AC45 /* Idea */,
 				0A1ED9941EBDC7F800F0AC45 /* Help */,
 				0A1ED9831EBC640D00F0AC45 /* Setting */,
 				0A1ED9931EBDC7E100F0AC45 /* Model */,
@@ -630,6 +632,15 @@
 				0A1ED9E81EBDD2ED00F0AC45 /* CoreTelephony.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A1ED9F81EBDD51700F0AC45 /* Idea */ = {
+			isa = PBXGroup;
+			children = (
+				0A1ED98D1EBC7C0900F0AC45 /* IdeaViewController.swift */,
+				0A1ED9951EBDCCC500F0AC45 /* PlaceholderTextView.swift */,
+			);
+			name = Idea;
 			sourceTree = "<group>";
 		};
 		0A2A05601EB06A900013CCB3 /* SettingUp */ = {
@@ -1261,6 +1272,7 @@
 				0A3A4CE51EB0700400C0F444 /* MJRefreshBackGifFooter.m in Sources */,
 				0A1ED9781EBC56BB00F0AC45 /* MineVC.swift in Sources */,
 				0AF42CA31EB8503100982AEB /* IconImageTextView.swift in Sources */,
+				0A1ED9FC1EBDD57000F0AC45 /* MyShopViewController.swift in Sources */,
 				0A3A4D131EB1BA9D00C0F444 /* Theme.swift in Sources */,
 				0A3A4CE11EB0700400C0F444 /* MJRefreshHeader.m in Sources */,
 				0A3A4CF81EB0700400C0F444 /* SDWebImagePrefetcher.m in Sources */,
