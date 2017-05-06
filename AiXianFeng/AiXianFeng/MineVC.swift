@@ -22,7 +22,7 @@ class MineVC: BaseVC {
     var iderVCSendIderSuccess = false
     
     // MARK: Lazy Property
-    private lazy var mines: [MineCellModel] = {
+    lazy var mines: [MineCellModel] = {
         let mines = MineCellModel.loadMineCellModels()
         return mines
     }()
@@ -119,15 +119,15 @@ extension MineVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = MineCell.cellFor(tableView: tableView)
         
-        if 0 == indexPath.section {
-//            cell.mineModel = mines[indexPath.row]
-        } else if 1 == indexPath.section {
-//            cell.mineModel = mines[2]
+        if indexPath.section == 0 {
+            cell.mineModel = mines[indexPath.row]
+        } else if indexPath.section == 1 {
+            cell.mineModel = mines[2]
         } else {
             if indexPath.row == 0 {
-//                cell.mineModel = mines[3]
+                cell.mineModel = mines[3]
             } else {
-//                cell.mineModel = mines[4]
+                cell.mineModel = mines[4]
             }
         }
         
@@ -171,12 +171,14 @@ extension MineVC: UITableViewDelegate, UITableViewDataSource {
 //            }
         } else if 2 == indexPath.section {
             if 0 == indexPath.row {
-//                let helpVc = HelpViewController()
-//                navigationController?.pushViewController(helpVc, animated: true)
+                let helpVc = HelpViewController()
+                helpVc.hidesBottomBarWhenPushed = true
+                navigationController?.pushViewController(helpVc, animated: true)
             } else if 1 == indexPath.row {
-//                let ideaVC = IdeaViewController()
-//                ideaVC.mineVC = self
-//                navigationController!.pushViewController(ideaVC, animated: true)
+                let ideaVC = IdeaViewController()
+                ideaVC.mineVC = self
+                ideaVC.hidesBottomBarWhenPushed = true
+                navigationController!.pushViewController(ideaVC, animated: true)
             }
         }
     }

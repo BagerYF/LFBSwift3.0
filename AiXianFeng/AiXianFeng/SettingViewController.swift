@@ -103,7 +103,7 @@ class SettingViewController: BaseVC {
     
     // MARK: - Action
     func aboutMeViewClick() {
-        let aboutVc = AboltAuthorViewController()
+        let aboutVc = AboutAuthorViewController()
         navigationController?.pushViewController(aboutVc, animated: true)
     }
     

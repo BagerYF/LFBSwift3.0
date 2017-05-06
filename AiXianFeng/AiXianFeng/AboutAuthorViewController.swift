@@ -9,7 +9,7 @@
 
 import UIKit
 
-class AboltAuthorViewController: BaseVC {
+class AboutAuthorViewController: BaseVC {
     
     private var authorLabel: UILabel!
     private var gitHubLabel: UILabel!

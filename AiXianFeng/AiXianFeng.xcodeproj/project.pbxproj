@@ -16,7 +16,13 @@
 		0A1ED97E1EBC57BD00F0AC45 /* MineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED97D1EBC57BD00F0AC45 /* MineCell.swift */; };
 		0A1ED9801EBC57E800F0AC45 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED97F1EBC57E800F0AC45 /* SettingViewController.swift */; };
 		0A1ED9821EBC5EED00F0AC45 /* UpImageDownTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9811EBC5EED00F0AC45 /* UpImageDownTextButton.swift */; };
-		0A1ED9851EBC643000F0AC45 /* AboltAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9841EBC643000F0AC45 /* AboltAuthorViewController.swift */; };
+		0A1ED9851EBC643000F0AC45 /* AboutAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9841EBC643000F0AC45 /* AboutAuthorViewController.swift */; };
+		0A1ED9881EBC7BE800F0AC45 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9871EBC7BE800F0AC45 /* HelpViewController.swift */; };
+		0A1ED98A1EBC7BF800F0AC45 /* HelpHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9891EBC7BF800F0AC45 /* HelpHeadView.swift */; };
+		0A1ED98C1EBC7BFE00F0AC45 /* HelpDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED98B1EBC7BFE00F0AC45 /* HelpDetailViewController.swift */; };
+		0A1ED98E1EBC7C0900F0AC45 /* IdeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED98D1EBC7C0900F0AC45 /* IdeaViewController.swift */; };
+		0A1ED9901EBDC47E00F0AC45 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED98F1EBDC47E00F0AC45 /* Help.swift */; };
+		0A1ED9921EBDC55B00F0AC45 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9911EBDC55B00F0AC45 /* AnswerCell.swift */; };
 		0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */; };
 		0A309C931EADC29C00E81590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A309C921EADC29C00E81590 /* AppDelegate.swift */; };
 		0A309C981EADC29C00E81590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A309C961EADC29C00E81590 /* Main.storyboard */; };
@@ -146,7 +152,13 @@
 		0A1ED97D1EBC57BD00F0AC45 /* MineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineCell.swift; sourceTree = "<group>"; };
 		0A1ED97F1EBC57E800F0AC45 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		0A1ED9811EBC5EED00F0AC45 /* UpImageDownTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpImageDownTextButton.swift; sourceTree = "<group>"; };
-		0A1ED9841EBC643000F0AC45 /* AboltAuthorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboltAuthorViewController.swift; sourceTree = "<group>"; };
+		0A1ED9841EBC643000F0AC45 /* AboutAuthorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutAuthorViewController.swift; sourceTree = "<group>"; };
+		0A1ED9871EBC7BE800F0AC45 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		0A1ED9891EBC7BF800F0AC45 /* HelpHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpHeadView.swift; sourceTree = "<group>"; };
+		0A1ED98B1EBC7BFE00F0AC45 /* HelpDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpDetailViewController.swift; sourceTree = "<group>"; };
+		0A1ED98D1EBC7C0900F0AC45 /* IdeaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdeaViewController.swift; sourceTree = "<group>"; };
+		0A1ED98F1EBDC47E00F0AC45 /* Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		0A1ED9911EBDC55B00F0AC45 /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		0A309C8F1EADC29C00E81590 /* AiXianFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiXianFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A309C921EADC29C00E81590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -344,11 +356,11 @@
 			isa = PBXGroup;
 			children = (
 				0A1ED9771EBC56BB00F0AC45 /* MineVC.swift */,
-				0A1ED97B1EBC57B000F0AC45 /* MineHeadView.swift */,
-				0A1ED9791EBC57A600F0AC45 /* MineTabeHeadView.swift */,
-				0A1ED97D1EBC57BD00F0AC45 /* MineCell.swift */,
-				0A1ED9811EBC5EED00F0AC45 /* UpImageDownTextButton.swift */,
+				0A1ED98D1EBC7C0900F0AC45 /* IdeaViewController.swift */,
+				0A1ED9941EBDC7F800F0AC45 /* Help */,
 				0A1ED9831EBC640D00F0AC45 /* Setting */,
+				0A1ED9931EBDC7E100F0AC45 /* Model */,
+				0A1ED9861EBC7BAC00F0AC45 /* View */,
 			);
 			name = Mine;
 			sourceTree = "<group>";
@@ -357,9 +369,39 @@
 			isa = PBXGroup;
 			children = (
 				0A1ED97F1EBC57E800F0AC45 /* SettingViewController.swift */,
-				0A1ED9841EBC643000F0AC45 /* AboltAuthorViewController.swift */,
+				0A1ED9841EBC643000F0AC45 /* AboutAuthorViewController.swift */,
 			);
 			name = Setting;
+			sourceTree = "<group>";
+		};
+		0A1ED9861EBC7BAC00F0AC45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A1ED9911EBDC55B00F0AC45 /* AnswerCell.swift */,
+				0A1ED97B1EBC57B000F0AC45 /* MineHeadView.swift */,
+				0A1ED9791EBC57A600F0AC45 /* MineTabeHeadView.swift */,
+				0A1ED97D1EBC57BD00F0AC45 /* MineCell.swift */,
+				0A1ED9811EBC5EED00F0AC45 /* UpImageDownTextButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0A1ED9931EBDC7E100F0AC45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A1ED98F1EBDC47E00F0AC45 /* Help.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0A1ED9941EBDC7F800F0AC45 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				0A1ED9871EBC7BE800F0AC45 /* HelpViewController.swift */,
+				0A1ED9891EBC7BF800F0AC45 /* HelpHeadView.swift */,
+				0A1ED98B1EBC7BFE00F0AC45 /* HelpDetailViewController.swift */,
+			);
+			name = Help;
 			sourceTree = "<group>";
 		};
 		0A2A05601EB06A900013CCB3 /* SettingUp */ = {
@@ -909,7 +951,8 @@
 				0A3A4CEA1EB0700400C0F444 /* MJRefreshStateHeader.m in Sources */,
 				0A1ED97C1EBC57B000F0AC45 /* MineHeadView.swift in Sources */,
 				0AF42C8F1EB6FE0B00982AEB /* MJPropertyType.m in Sources */,
-				0A1ED9851EBC643000F0AC45 /* AboltAuthorViewController.swift in Sources */,
+				0A1ED9901EBDC47E00F0AC45 /* Help.swift in Sources */,
+				0A1ED9851EBC643000F0AC45 /* AboutAuthorViewController.swift in Sources */,
 				0AF42C721EB6EF5000982AEB /* SwiftyJSON.swift in Sources */,
 				0A3A4D0D1EB070BB00C0F444 /* SVProgressHUD.m in Sources */,
 				0AF42CB01EB96C0E00982AEB /* ProductCell.swift in Sources */,
@@ -918,6 +961,7 @@
 				0AF42C8E1EB6FE0B00982AEB /* MJPropertyKey.m in Sources */,
 				0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */,
 				0AF42C961EB75F2100982AEB /* DiscountPriceView.swift in Sources */,
+				0A1ED98E1EBC7C0900F0AC45 /* IdeaViewController.swift in Sources */,
 				0A3A4D221EB57C0100C0F444 /* String + Extension.swift in Sources */,
 				0A3A4CEF1EB0700400C0F444 /* UIView+MJExtension.m in Sources */,
 				0AF42CAC1EB96BFB00982AEB /* ProductsViewController.swift in Sources */,
@@ -936,6 +980,7 @@
 				0AF42CA71EB8858500982AEB /* MarketVC.swift in Sources */,
 				0A3A4CFB1EB0700400C0F444 /* UIImage+MultiFormat.m in Sources */,
 				0AF42CB21EB96C1400982AEB /* CategoryCell.swift in Sources */,
+				0A1ED9881EBC7BE800F0AC45 /* HelpViewController.swift in Sources */,
 				0A3A4CF61EB0700400C0F444 /* SDWebImageDownloaderOperation.m in Sources */,
 				0A309CCF1EB0384F00E81590 /* WebVC.swift in Sources */,
 				0A3A4CFD1EB0700400C0F444 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -956,11 +1001,13 @@
 				0A1ED9711EBC262B00F0AC45 /* ProductDetailVC.swift in Sources */,
 				0A3A4CF41EB0700400C0F444 /* SDWebImageDecoder.m in Sources */,
 				0AF42C911EB6FE0B00982AEB /* NSObject+MJCoding.m in Sources */,
+				0A1ED98C1EBC7BFE00F0AC45 /* HelpDetailViewController.swift in Sources */,
 				0A3A4CEE1EB0700400C0F444 /* UIScrollView+MJRefresh.m in Sources */,
 				0A3A4D171EB57B4000C0F444 /* HomeCell.swift in Sources */,
 				0A3A4CEC1EB0700400C0F444 /* MJRefreshConst.m in Sources */,
 				0AF42C8D1EB6FE0B00982AEB /* MJProperty.m in Sources */,
 				0A3A4D111EB1811800C0F444 /* MainTabBarC.swift in Sources */,
+				0A1ED98A1EBC7BF800F0AC45 /* HelpHeadView.swift in Sources */,
 				0A1ED97A1EBC57A600F0AC45 /* MineTabeHeadView.swift in Sources */,
 				0A3A4CE51EB0700400C0F444 /* MJRefreshBackGifFooter.m in Sources */,
 				0A1ED9781EBC56BB00F0AC45 /* MineVC.swift in Sources */,
@@ -972,6 +1019,7 @@
 				0A3A4CFA1EB0700400C0F444 /* UIImage+GIF.m in Sources */,
 				0A3A4D231EB57C0100C0F444 /* UIImage + Extension.swift in Sources */,
 				0A3A4D0A1EB070BB00C0F444 /* README.md in Sources */,
+				0A1ED9921EBDC55B00F0AC45 /* AnswerCell.swift in Sources */,
 				0A3A4CE91EB0700400C0F444 /* MJRefreshNormalHeader.m in Sources */,
 				0A3A4D1E1EB57C0100C0F444 /* Color+Extension.swift in Sources */,
 			);
