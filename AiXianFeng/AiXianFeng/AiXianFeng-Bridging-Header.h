@@ -6,3 +6,4 @@
 #import "MJRefresh.h"
 #import <CoreLocation/CoreLocation.h>
 #import "MJExtension.h"
+#import "UMSocial.h"
