@@ -45,23 +45,14 @@ class MineVC: BaseVC {
         navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewWillAppear(animated)
         navigationController?.navigationBar.barTintColor = YFNavigationBarWhiteBackgroundColor
-//        weak var tmpSelf = self
-//        Mine.loadMineData { (data, error) -> Void in
-//            if error == nil {
-//                if data?.data?.availble_coupon_num > 0 {
-//                    tmpSelf!.couponNum = data!.data!.availble_coupon_num
-//                    tmpSelf!.tableHeadView.setCouponNumer(data!.data!.availble_coupon_num)
-//                } else {
-//                    tmpSelf!.tableHeadView.setCouponNumer(0)
-//                }
-//            }
-//        }
+
+        tableHeadView.setCouponNumer(number: 1)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if iderVCSendIderSuccess {
-//            ProgressHUDManager.showSuccessWithStatus("已经收到你的意见了,我们会刚正面的,放心吧~~")
+            ProgressHUDManager.showSuccessWithStatus(string: "已经收到你的意见了,我们会刚正面的,放心吧~~")
             iderVCSendIderSuccess = false
         }
     }

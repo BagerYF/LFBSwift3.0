@@ -93,10 +93,12 @@ class MineTabeHeadView: UIView {
         addSubview(line2)
         
         couponNumber = UIButton(type: .custom)
-        couponNumber?.setBackgroundImage(UIImage(named: "redCycle"), for: UIControlState.normal)
-        couponNumber?.setTitleColor(UIColor.red, for: .normal)
+        couponNumber?.backgroundColor = UIColor.red
+        couponNumber?.setTitleColor(UIColor.white, for: .normal)
         couponNumber?.isUserInteractionEnabled = false
-        couponNumber?.titleLabel?.font = UIFont.systemFont(ofSize: 8)
+        couponNumber?.layer.cornerRadius = 7.5
+        couponNumber?.layer.masksToBounds = true
+        couponNumber?.titleLabel?.font = UIFont.systemFont(ofSize: 12)
         couponNumber?.isHidden = true
         addSubview(couponNumber!)
     }
