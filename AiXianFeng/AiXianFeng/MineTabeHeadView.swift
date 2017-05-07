@@ -79,7 +79,7 @@ class MineTabeHeadView: UIView {
         addSubview(messageView)
         
         for index in 0...2 {
-            let tap = UITapGestureRecognizer(target: self, action: Selector(("click:")))
+            let tap = UITapGestureRecognizer(target: self, action: #selector(click(tap:)))
             let subView = viewWithTag(index)
             subView?.addGestureRecognizer(tap)
         }

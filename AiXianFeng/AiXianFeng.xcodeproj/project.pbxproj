@@ -59,6 +59,10 @@
 		0A1EDA001EBEC3B200F0AC45 /* EditAdressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9FF1EBEC3B200F0AC45 /* EditAdressViewController.swift */; };
 		0A1EDA021EBEC3B700F0AC45 /* AdressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA011EBEC3B700F0AC45 /* AdressCell.swift */; };
 		0A1EDA041EBEC45000F0AC45 /* AdressData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA031EBEC45000F0AC45 /* AdressData.swift */; };
+		0A1EDA091EBEEDBD00F0AC45 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA061EBEEDBD00F0AC45 /* CouponViewController.swift */; };
+		0A1EDA0A1EBEEDBD00F0AC45 /* CouponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA071EBEEDBD00F0AC45 /* CouponCell.swift */; };
+		0A1EDA0B1EBEEDBD00F0AC45 /* BindingCouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA081EBEEDBD00F0AC45 /* BindingCouponView.swift */; };
+		0A1EDA0D1EBEEE3400F0AC45 /* CouponData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA0C1EBEEE3400F0AC45 /* CouponData.swift */; };
 		0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */; };
 		0A309C931EADC29C00E81590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A309C921EADC29C00E81590 /* AppDelegate.swift */; };
 		0A309C981EADC29C00E81590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A309C961EADC29C00E81590 /* Main.storyboard */; };
@@ -258,6 +262,10 @@
 		0A1ED9FF1EBEC3B200F0AC45 /* EditAdressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAdressViewController.swift; sourceTree = "<group>"; };
 		0A1EDA011EBEC3B700F0AC45 /* AdressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressCell.swift; sourceTree = "<group>"; };
 		0A1EDA031EBEC45000F0AC45 /* AdressData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressData.swift; sourceTree = "<group>"; };
+		0A1EDA061EBEEDBD00F0AC45 /* CouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
+		0A1EDA071EBEEDBD00F0AC45 /* CouponCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponCell.swift; sourceTree = "<group>"; };
+		0A1EDA081EBEEDBD00F0AC45 /* BindingCouponView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingCouponView.swift; sourceTree = "<group>"; };
+		0A1EDA0C1EBEEE3400F0AC45 /* CouponData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponData.swift; sourceTree = "<group>"; };
 		0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		0A309C8F1EADC29C00E81590 /* AiXianFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiXianFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A309C921EADC29C00E81590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -470,10 +478,10 @@
 			isa = PBXGroup;
 			children = (
 				0A1ED9771EBC56BB00F0AC45 /* MineVC.swift */,
-				0A1ED9FD1EBEC3AC00F0AC45 /* MyAdressViewController.swift */,
-				0A1ED9FF1EBEC3B200F0AC45 /* EditAdressViewController.swift */,
-				0A1EDA011EBEC3B700F0AC45 /* AdressCell.swift */,
-				0A1EDA031EBEC45000F0AC45 /* AdressData.swift */,
+				0A1EDA061EBEEDBD00F0AC45 /* CouponViewController.swift */,
+				0A1EDA071EBEEDBD00F0AC45 /* CouponCell.swift */,
+				0A1EDA081EBEEDBD00F0AC45 /* BindingCouponView.swift */,
+				0A1EDA051EBEED0C00F0AC45 /* Address */,
 				0A1ED9F81EBDD51700F0AC45 /* Idea */,
 				0A1ED9941EBDC7F800F0AC45 /* Help */,
 				0A1ED9831EBC640D00F0AC45 /* Setting */,
@@ -495,6 +503,7 @@
 		0A1ED9861EBC7BAC00F0AC45 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0A1EDA011EBEC3B700F0AC45 /* AdressCell.swift */,
 				0A1ED9911EBDC55B00F0AC45 /* AnswerCell.swift */,
 				0A1ED97B1EBC57B000F0AC45 /* MineHeadView.swift */,
 				0A1ED9791EBC57A600F0AC45 /* MineTabeHeadView.swift */,
@@ -508,6 +517,8 @@
 			isa = PBXGroup;
 			children = (
 				0A1ED98F1EBDC47E00F0AC45 /* Help.swift */,
+				0A1EDA031EBEC45000F0AC45 /* AdressData.swift */,
+				0A1EDA0C1EBEEE3400F0AC45 /* CouponData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -653,6 +664,15 @@
 				0A1ED9951EBDCCC500F0AC45 /* PlaceholderTextView.swift */,
 			);
 			name = Idea;
+			sourceTree = "<group>";
+		};
+		0A1EDA051EBEED0C00F0AC45 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				0A1ED9FD1EBEC3AC00F0AC45 /* MyAdressViewController.swift */,
+				0A1ED9FF1EBEC3B200F0AC45 /* EditAdressViewController.swift */,
+			);
+			name = Address;
 			sourceTree = "<group>";
 		};
 		0A2A05601EB06A900013CCB3 /* SettingUp */ = {
@@ -1221,9 +1241,11 @@
 				0A1ED9801EBC57E800F0AC45 /* SettingViewController.swift in Sources */,
 				0A3A4CEA1EB0700400C0F444 /* MJRefreshStateHeader.m in Sources */,
 				0A1ED97C1EBC57B000F0AC45 /* MineHeadView.swift in Sources */,
+				0A1EDA0A1EBEEDBD00F0AC45 /* CouponCell.swift in Sources */,
 				0AF42C8F1EB6FE0B00982AEB /* MJPropertyType.m in Sources */,
 				0A1ED9901EBDC47E00F0AC45 /* Help.swift in Sources */,
 				0A1ED9851EBC643000F0AC45 /* AboutAuthorViewController.swift in Sources */,
+				0A1EDA0D1EBEEE3400F0AC45 /* CouponData.swift in Sources */,
 				0AF42C721EB6EF5000982AEB /* SwiftyJSON.swift in Sources */,
 				0A3A4D0D1EB070BB00C0F444 /* SVProgressHUD.m in Sources */,
 				0AF42CB01EB96C0E00982AEB /* ProductCell.swift in Sources */,
@@ -1259,6 +1281,7 @@
 				0A309CCF1EB0384F00E81590 /* WebVC.swift in Sources */,
 				0A3A4CFD1EB0700400C0F444 /* UIImageView+HighlightedWebCache.m in Sources */,
 				0A3A4CDF1EB0700400C0F444 /* MJRefreshComponent.m in Sources */,
+				0A1EDA0B1EBEEDBD00F0AC45 /* BindingCouponView.swift in Sources */,
 				0A1ED97E1EBC57BD00F0AC45 /* MineCell.swift in Sources */,
 				0AF42C9A1EB76A4200982AEB /* HomeTableHeadView.swift in Sources */,
 				0A3A4CE31EB0700400C0F444 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -1284,6 +1307,7 @@
 				0AF42C8D1EB6FE0B00982AEB /* MJProperty.m in Sources */,
 				0A3A4D111EB1811800C0F444 /* MainTabBarC.swift in Sources */,
 				0A1ED98A1EBC7BF800F0AC45 /* HelpHeadView.swift in Sources */,
+				0A1EDA091EBEEDBD00F0AC45 /* CouponViewController.swift in Sources */,
 				0A1ED97A1EBC57A600F0AC45 /* MineTabeHeadView.swift in Sources */,
 				0A3A4CE51EB0700400C0F444 /* MJRefreshBackGifFooter.m in Sources */,
 				0A1ED9781EBC56BB00F0AC45 /* MineVC.swift in Sources */,

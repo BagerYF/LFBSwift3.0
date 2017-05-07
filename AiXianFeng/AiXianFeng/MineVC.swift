@@ -89,7 +89,7 @@ class MineVC: BaseVC {
         tableView.rowHeight = 46
         view.addSubview(tableView)
         
-//        weak var tmpSelf = self
+        weak var tmpSelf = self
         tableHeadView = MineTabeHeadView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 70))
         // 点击headView回调
         tableHeadView.mineHeadViewClick = { (type) -> () in
@@ -99,8 +99,9 @@ class MineVC: BaseVC {
 //                tmpSelf!.navigationController?.pushViewController(orderVc, animated: true)
                 break
             case .Coupon:
-//                let couponVC = CouponViewController()
-//                tmpSelf!.navigationController!.pushViewController(couponVC, animated: true)
+                let couponVC = CouponViewController()
+                couponVC.hidesBottomBarWhenPushed = true
+                tmpSelf!.navigationController!.pushViewController(couponVC, animated: true)
                 break
             case .Message:
 //                let message = MessageViewController()
