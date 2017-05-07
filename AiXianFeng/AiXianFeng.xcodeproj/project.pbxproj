@@ -55,6 +55,10 @@
 		0A1ED9F51EBDD33C00F0AC45 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1ED9F41EBDD33C00F0AC45 /* libsqlite3.tbd */; };
 		0A1ED9F71EBDD34600F0AC45 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1ED9F61EBDD34600F0AC45 /* libiconv.tbd */; };
 		0A1ED9FC1EBDD57000F0AC45 /* MyShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9FB1EBDD57000F0AC45 /* MyShopViewController.swift */; };
+		0A1ED9FE1EBEC3AC00F0AC45 /* MyAdressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9FD1EBEC3AC00F0AC45 /* MyAdressViewController.swift */; };
+		0A1EDA001EBEC3B200F0AC45 /* EditAdressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1ED9FF1EBEC3B200F0AC45 /* EditAdressViewController.swift */; };
+		0A1EDA021EBEC3B700F0AC45 /* AdressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA011EBEC3B700F0AC45 /* AdressCell.swift */; };
+		0A1EDA041EBEC45000F0AC45 /* AdressData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA031EBEC45000F0AC45 /* AdressData.swift */; };
 		0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */; };
 		0A309C931EADC29C00E81590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A309C921EADC29C00E81590 /* AppDelegate.swift */; };
 		0A309C981EADC29C00E81590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A309C961EADC29C00E81590 /* Main.storyboard */; };
@@ -250,6 +254,10 @@
 		0A1ED9F41EBDD33C00F0AC45 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0A1ED9F61EBDD34600F0AC45 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		0A1ED9FB1EBDD57000F0AC45 /* MyShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShopViewController.swift; sourceTree = "<group>"; };
+		0A1ED9FD1EBEC3AC00F0AC45 /* MyAdressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAdressViewController.swift; sourceTree = "<group>"; };
+		0A1ED9FF1EBEC3B200F0AC45 /* EditAdressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAdressViewController.swift; sourceTree = "<group>"; };
+		0A1EDA011EBEC3B700F0AC45 /* AdressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressCell.swift; sourceTree = "<group>"; };
+		0A1EDA031EBEC45000F0AC45 /* AdressData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressData.swift; sourceTree = "<group>"; };
 		0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		0A309C8F1EADC29C00E81590 /* AiXianFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiXianFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A309C921EADC29C00E81590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -462,7 +470,10 @@
 			isa = PBXGroup;
 			children = (
 				0A1ED9771EBC56BB00F0AC45 /* MineVC.swift */,
-				0A1ED9FB1EBDD57000F0AC45 /* MyShopViewController.swift */,
+				0A1ED9FD1EBEC3AC00F0AC45 /* MyAdressViewController.swift */,
+				0A1ED9FF1EBEC3B200F0AC45 /* EditAdressViewController.swift */,
+				0A1EDA011EBEC3B700F0AC45 /* AdressCell.swift */,
+				0A1EDA031EBEC45000F0AC45 /* AdressData.swift */,
 				0A1ED9F81EBDD51700F0AC45 /* Idea */,
 				0A1ED9941EBDC7F800F0AC45 /* Help */,
 				0A1ED9831EBC640D00F0AC45 /* Setting */,
@@ -637,6 +648,7 @@
 		0A1ED9F81EBDD51700F0AC45 /* Idea */ = {
 			isa = PBXGroup;
 			children = (
+				0A1ED9FB1EBDD57000F0AC45 /* MyShopViewController.swift */,
 				0A1ED98D1EBC7C0900F0AC45 /* IdeaViewController.swift */,
 				0A1ED9951EBDCCC500F0AC45 /* PlaceholderTextView.swift */,
 			);
@@ -1218,6 +1230,7 @@
 				0AF42C8B1EB6FE0B00982AEB /* MJExtensionConst.m in Sources */,
 				0A1ED9751EBC3C9D00F0AC45 /* ShopCarRedDotView.swift in Sources */,
 				0AF42C8E1EB6FE0B00982AEB /* MJPropertyKey.m in Sources */,
+				0A1EDA001EBEC3B200F0AC45 /* EditAdressViewController.swift in Sources */,
 				0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */,
 				0AF42C961EB75F2100982AEB /* DiscountPriceView.swift in Sources */,
 				0A1ED98E1EBC7C0900F0AC45 /* IdeaViewController.swift in Sources */,
@@ -1231,12 +1244,14 @@
 				0A3A4CED1EB0700400C0F444 /* UIScrollView+MJExtension.m in Sources */,
 				0A3A4CFE1EB0700400C0F444 /* UIImageView+WebCache.m in Sources */,
 				0A3A4CFC1EB0700400C0F444 /* UIImage+WebP.m in Sources */,
+				0A1EDA021EBEC3B700F0AC45 /* AdressCell.swift in Sources */,
 				0A3A4CF21EB0700400C0F444 /* SDImageCache.m in Sources */,
 				0A3A4CE61EB0700400C0F444 /* MJRefreshBackNormalFooter.m in Sources */,
 				0AF42C9F1EB8287300982AEB /* HotView.swift in Sources */,
 				0A1ED9731EBC3C1E00F0AC45 /* YellowShopCarView.swift in Sources */,
 				0AF42C921EB6FE0B00982AEB /* NSObject+MJKeyValue.m in Sources */,
 				0AF42CA71EB8858500982AEB /* MarketVC.swift in Sources */,
+				0A1EDA041EBEC45000F0AC45 /* AdressData.swift in Sources */,
 				0A3A4CFB1EB0700400C0F444 /* UIImage+MultiFormat.m in Sources */,
 				0AF42CB21EB96C1400982AEB /* CategoryCell.swift in Sources */,
 				0A1ED9881EBC7BE800F0AC45 /* HelpViewController.swift in Sources */,
@@ -1261,6 +1276,7 @@
 				0A3A4CF41EB0700400C0F444 /* SDWebImageDecoder.m in Sources */,
 				0AF42C911EB6FE0B00982AEB /* NSObject+MJCoding.m in Sources */,
 				0A1ED98C1EBC7BFE00F0AC45 /* HelpDetailViewController.swift in Sources */,
+				0A1ED9FE1EBEC3AC00F0AC45 /* MyAdressViewController.swift in Sources */,
 				0A1ED9961EBDCCC500F0AC45 /* PlaceholderTextView.swift in Sources */,
 				0A3A4CEE1EB0700400C0F444 /* UIScrollView+MJRefresh.m in Sources */,
 				0A3A4D171EB57B4000C0F444 /* HomeCell.swift in Sources */,

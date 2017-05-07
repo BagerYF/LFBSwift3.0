@@ -159,8 +159,9 @@ extension MineVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if 0 == indexPath.section {
             if 0 == indexPath.row {
-//                let adressVC = MyAdressViewController()
-//                navigationController?.pushViewController(adressVC, animated: true)
+                let adressVC = MyAdressViewController()
+                adressVC.hidesBottomBarWhenPushed = true
+                navigationController?.pushViewController(adressVC, animated: true)
             } else {
                 let myShopVC = MyShopViewController()
                 myShopVC.hidesBottomBarWhenPushed = true
