@@ -20,15 +20,15 @@ class AdressData: NSObject {
         return ["data" : "\(Adress.self)"]
     }
     
-    class func loadMyAdressData(completion:(_ data: AdressData?, _ error: NSError?) -> Void) {
-//        let path = Bundle.main.path(forResource: "MyAdress", ofType: nil)
-//        let data = NSData(contentsOfFile: path!)
-//        if data != nil {
-//            let dict: NSDictionary = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)) as! NSDictionary
-//            let modelTool = DictModelManager.sharedManager
-//            let data = modelTool.objectWithDictionary(dict, cls: AdressData.self) as? AdressData
-//            completion(data: data, error: nil)
-//        }
+    class func loadMyAdressData(completion:(_ addressArray: Array<Any>?) -> Void) {
+        let path = Bundle.main.path(forResource: "MyAdress", ofType: nil)
+        let data = NSData(contentsOfFile: path!)
+        let json = JSON.init(data as Any)
+        
+        var tempArray : Array<Any>?
+        tempArray = json["data"].arrayObject
+        tempArray = Adress.mj_objectArray(withKeyValuesArray: tempArray) as? Array<Any>
+        completion(tempArray)
     }
 }
 

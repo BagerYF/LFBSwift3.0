@@ -101,19 +101,17 @@ class MyAdressViewController: BaseVC {
     
     private func loadAdressData() {
         weak var tmpSelf = self
-        AdressData.loadMyAdressData { (data, error) -> Void in
-            if error == nil {
-                if (data?.data?.count)! > 0 {
-                    tmpSelf!.adresses = data!.data
-                    tmpSelf!.adressTableView?.isHidden = false
-                    tmpSelf!.adressTableView?.reloadData()
-                    tmpSelf!.nullImageView.isHidden = true
-//                    UserInfo.sharedUserInfo.setAllAdress(data!.data!)
-                } else {
-                    tmpSelf!.adressTableView?.isHidden = true
-                    tmpSelf!.nullImageView.isHidden = false
-//                    UserInfo.sharedUserInfo.cleanAllAdress()
-                }
+        AdressData.loadMyAdressData { (addressArray) -> Void in
+            if (addressArray?.count)! > 0 {
+                tmpSelf!.adresses = addressArray as? [Adress]
+                tmpSelf!.adressTableView?.isHidden = false
+                tmpSelf!.adressTableView?.reloadData()
+                tmpSelf!.nullImageView.isHidden = true
+                //                    UserInfo.sharedUserInfo.setAllAdress(data!.data!)
+            } else {
+                tmpSelf!.adressTableView?.isHidden = true
+                tmpSelf!.nullImageView.isHidden = false
+                //                    UserInfo.sharedUserInfo.cleanAllAdress()
             }
         }
     }
