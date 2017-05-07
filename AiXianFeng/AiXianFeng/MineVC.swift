@@ -44,7 +44,7 @@ class MineVC: BaseVC {
         
         navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewWillAppear(animated)
-        
+        navigationController?.navigationBar.barTintColor = YFNavigationBarWhiteBackgroundColor
 //        weak var tmpSelf = self
 //        Mine.loadMineData { (data, error) -> Void in
 //            if error == nil {
@@ -104,8 +104,9 @@ class MineVC: BaseVC {
                 tmpSelf!.navigationController!.pushViewController(couponVC, animated: true)
                 break
             case .Message:
-//                let message = MessageViewController()
-//                tmpSelf!.navigationController?.pushViewController(message, animated: true)
+                let message = MessageViewController()
+                message.hidesBottomBarWhenPushed = true
+                tmpSelf!.navigationController?.pushViewController(message, animated: true)
                 break
             }
         }

@@ -63,6 +63,9 @@
 		0A1EDA0A1EBEEDBD00F0AC45 /* CouponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA071EBEEDBD00F0AC45 /* CouponCell.swift */; };
 		0A1EDA0B1EBEEDBD00F0AC45 /* BindingCouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA081EBEEDBD00F0AC45 /* BindingCouponView.swift */; };
 		0A1EDA0D1EBEEE3400F0AC45 /* CouponData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA0C1EBEEE3400F0AC45 /* CouponData.swift */; };
+		0A1EDA101EBEF7AF00F0AC45 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA0F1EBEF7AF00F0AC45 /* MessageViewController.swift */; };
+		0A1EDA121EBEF7B600F0AC45 /* SystemMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA111EBEF7B600F0AC45 /* SystemMessageCell.swift */; };
+		0A1EDA141EBEF9A000F0AC45 /* UserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA131EBEF9A000F0AC45 /* UserMessage.swift */; };
 		0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */; };
 		0A309C931EADC29C00E81590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A309C921EADC29C00E81590 /* AppDelegate.swift */; };
 		0A309C981EADC29C00E81590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A309C961EADC29C00E81590 /* Main.storyboard */; };
@@ -266,6 +269,9 @@
 		0A1EDA071EBEEDBD00F0AC45 /* CouponCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponCell.swift; sourceTree = "<group>"; };
 		0A1EDA081EBEEDBD00F0AC45 /* BindingCouponView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingCouponView.swift; sourceTree = "<group>"; };
 		0A1EDA0C1EBEEE3400F0AC45 /* CouponData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponData.swift; sourceTree = "<group>"; };
+		0A1EDA0F1EBEF7AF00F0AC45 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		0A1EDA111EBEF7B600F0AC45 /* SystemMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemMessageCell.swift; sourceTree = "<group>"; };
+		0A1EDA131EBEF9A000F0AC45 /* UserMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMessage.swift; sourceTree = "<group>"; };
 		0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		0A309C8F1EADC29C00E81590 /* AiXianFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiXianFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A309C921EADC29C00E81590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -478,9 +484,9 @@
 			isa = PBXGroup;
 			children = (
 				0A1ED9771EBC56BB00F0AC45 /* MineVC.swift */,
-				0A1EDA061EBEEDBD00F0AC45 /* CouponViewController.swift */,
-				0A1EDA071EBEEDBD00F0AC45 /* CouponCell.swift */,
-				0A1EDA081EBEEDBD00F0AC45 /* BindingCouponView.swift */,
+				0A1EDA0F1EBEF7AF00F0AC45 /* MessageViewController.swift */,
+				0A1EDA111EBEF7B600F0AC45 /* SystemMessageCell.swift */,
+				0A1EDA0E1EBEF79100F0AC45 /* Coupon */,
 				0A1EDA051EBEED0C00F0AC45 /* Address */,
 				0A1ED9F81EBDD51700F0AC45 /* Idea */,
 				0A1ED9941EBDC7F800F0AC45 /* Help */,
@@ -518,6 +524,7 @@
 			children = (
 				0A1ED98F1EBDC47E00F0AC45 /* Help.swift */,
 				0A1EDA031EBEC45000F0AC45 /* AdressData.swift */,
+				0A1EDA131EBEF9A000F0AC45 /* UserMessage.swift */,
 				0A1EDA0C1EBEEE3400F0AC45 /* CouponData.swift */,
 			);
 			name = Model;
@@ -673,6 +680,16 @@
 				0A1ED9FF1EBEC3B200F0AC45 /* EditAdressViewController.swift */,
 			);
 			name = Address;
+			sourceTree = "<group>";
+		};
+		0A1EDA0E1EBEF79100F0AC45 /* Coupon */ = {
+			isa = PBXGroup;
+			children = (
+				0A1EDA061EBEEDBD00F0AC45 /* CouponViewController.swift */,
+				0A1EDA071EBEEDBD00F0AC45 /* CouponCell.swift */,
+				0A1EDA081EBEEDBD00F0AC45 /* BindingCouponView.swift */,
+			);
+			name = Coupon;
 			sourceTree = "<group>";
 		};
 		0A2A05601EB06A900013CCB3 /* SettingUp */ = {
@@ -1254,6 +1271,7 @@
 				0AF42C8E1EB6FE0B00982AEB /* MJPropertyKey.m in Sources */,
 				0A1EDA001EBEC3B200F0AC45 /* EditAdressViewController.swift in Sources */,
 				0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */,
+				0A1EDA101EBEF7AF00F0AC45 /* MessageViewController.swift in Sources */,
 				0AF42C961EB75F2100982AEB /* DiscountPriceView.swift in Sources */,
 				0A1ED98E1EBC7C0900F0AC45 /* IdeaViewController.swift in Sources */,
 				0A3A4D221EB57C0100C0F444 /* String + Extension.swift in Sources */,
@@ -1287,6 +1305,7 @@
 				0A3A4CE31EB0700400C0F444 /* MJRefreshAutoNormalFooter.m in Sources */,
 				0A309CC91EB0384F00E81590 /* LoginVC.swift in Sources */,
 				0A3A4CE21EB0700400C0F444 /* MJRefreshAutoGifFooter.m in Sources */,
+				0A1EDA141EBEF9A000F0AC45 /* UserMessage.swift in Sources */,
 				0A3A4D1F1EB57C0100C0F444 /* UIView+Extension.swift in Sources */,
 				0AF42CA51EB85E1700982AEB /* LoadProgressAnimationView.swift in Sources */,
 				0AF42CA11EB8288A00982AEB /* PageScrollView.swift in Sources */,
@@ -1321,6 +1340,7 @@
 				0A3A4D231EB57C0100C0F444 /* UIImage + Extension.swift in Sources */,
 				0A3A4D0A1EB070BB00C0F444 /* README.md in Sources */,
 				0A1ED9921EBDC55B00F0AC45 /* AnswerCell.swift in Sources */,
+				0A1EDA121EBEF7B600F0AC45 /* SystemMessageCell.swift in Sources */,
 				0A3A4CE91EB0700400C0F444 /* MJRefreshNormalHeader.m in Sources */,
 				0A3A4D1E1EB57C0100C0F444 /* Color+Extension.swift in Sources */,
 				0A1ED99A1EBDD00200F0AC45 /* ShareManager.swift in Sources */,
