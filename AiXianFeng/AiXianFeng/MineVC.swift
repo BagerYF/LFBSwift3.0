@@ -2,7 +2,7 @@
 //  MineVC.swift
 //  AiXianFeng
 //
-//  Created by Bager on 2017/5/5.
+//  Created by Bager on 2017/5/8.
 //  Copyright © 2017年 Bager. All rights reserved.
 //
 
@@ -86,8 +86,9 @@ class MineVC: BaseVC {
         tableHeadView.mineHeadViewClick = { (type) -> () in
             switch type {
             case .Order:
-//                let orderVc = OrderViewController()
-//                tmpSelf!.navigationController?.pushViewController(orderVc, animated: true)
+                let orderVc = OrderViewController()
+                orderVc.hidesBottomBarWhenPushed = true
+                tmpSelf!.navigationController?.pushViewController(orderVc, animated: true)
                 break
             case .Coupon:
                 let couponVC = CouponViewController()
