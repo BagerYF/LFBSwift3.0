@@ -98,7 +98,7 @@ class SettingViewController: BaseVC {
         logoutView.addSubview(logoutLabel)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(SettingViewController.logoutViewClick))
-        logoutLabel.addGestureRecognizer(tap)
+        logoutView.addGestureRecognizer(tap)
     }
     
     // MARK: - Action
@@ -116,5 +116,12 @@ class SettingViewController: BaseVC {
 //        }
     }
     
-    func logoutViewClick() {}
+    func logoutViewClick() {
+        let navigationVC = UINavigationController(rootViewController:LoginVC())
+        navigationVC.navigationBar.tintColor = UIColor.black
+        navigationVC.navigationBar.isTranslucent = false
+        present(navigationVC, animated: true) {
+            
+        }
+    }
 }

@@ -18,12 +18,6 @@ class LoginVC: BaseVC,UITableViewDelegate,UITableViewDataSource,UIAlertViewDeleg
         super.viewDidLoad()
         setUp()
         createTable()
-        setWipeBack()
-    }
-    
-    func setWipeBack() {
-        self.navigationController?.interactivePopGestureRecognizer!.delegate = self
-        self.navigationController?.navigationBar.barTintColor = UIColor.orange
     }
     
     //是否允许手势
@@ -36,26 +30,23 @@ class LoginVC: BaseVC,UITableViewDelegate,UITableViewDataSource,UIAlertViewDeleg
     }
     
     func setUp() {
-        self.navigationController?.navigationBar.isTranslucent = false;
-        self.navigationController?.navigationBar.barTintColor = UIColor.red
-        self.navigationController?.navigationBar.tintColor = UIColor.black
         self.view.backgroundColor = UIColor.white
         self.title = "登录";
-        telTextfield = UITextField(frame: CGRect(x: kScreenWidth - 115, y: 0, width: 100, height: 44))
+        telTextfield = UITextField(frame: CGRect(x: kScreenWidth - 115, y: 0, width: 100, height: 50))
 
         telTextfield!.backgroundColor = .white
         telTextfield?.placeholder = "请输入用户名"
         telTextfield?.textAlignment = .right
-        telTextfield?.font = UIFont.systemFont(ofSize: 14)
+        telTextfield?.font = UIFont.systemFont(ofSize: 16)
         telTextfield?.keyboardType = .numberPad
-        pwdTextfield = UITextField(frame: CGRect(x: kScreenWidth - 115, y: 0, width: 100, height: 44))
+        pwdTextfield = UITextField(frame: CGRect(x: kScreenWidth - 115, y: 0, width: 100, height: 50))
             pwdTextfield!.backgroundColor = UIColor.hex(hex: "#FFFFFF")
         pwdTextfield?.placeholder = "请输入密码"
         pwdTextfield?.textAlignment = .right
-        pwdTextfield?.font = UIFont.systemFont(ofSize: 14)
+        pwdTextfield?.font = UIFont.systemFont(ofSize: 16)
         pwdTextfield?.isSecureTextEntry = true
-        forgetBtn = UIButton(frame: CGRect(x: kScreenWidth - 95, y: 0, width: 80, height: 44))
-        forgetBtn?.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        forgetBtn = UIButton(frame: CGRect(x: kScreenWidth - 95, y: 0, width: 80, height: 50))
+        forgetBtn?.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         forgetBtn?.setTitle("忘记密码", for: .normal)
         forgetBtn?.contentHorizontalAlignment = .right
         forgetBtn?.setTitleColor(UIColor.black, for: .normal)
@@ -66,7 +57,8 @@ class LoginVC: BaseVC,UITableViewDelegate,UITableViewDataSource,UIAlertViewDeleg
         self.view.addSubview(table)
         table.delegate = self
         table.dataSource = self
-        table.backgroundColor = UIColor.white
+        table.rowHeight = 50
+        table.backgroundColor = YFGlobalBackgroundColor
         
         let footView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         table.tableFooterView = footView
@@ -92,25 +84,33 @@ class LoginVC: BaseVC,UITableViewDelegate,UITableViewDataSource,UIAlertViewDeleg
             cell.addSubview(forgetBtn!)
             cell.separatorInset = UIEdgeInsetsMake(0, self.view.frame.size.width, 0, 0)
         }
-        cell.textLabel?.font = UIFont.systemFont(ofSize: 14)
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 16)
         cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let subBack = UIView(frame: CGRect(x: 0, y: 0, width: kScreenWidth - 30, height: 50))
-        let submitBtn = UIButton(frame: CGRect(x: 15, y: 0, width: kScreenWidth - 30, height: 50))
+        let subBack = UIView(frame: CGRect(x: 0, y: 0, width: kScreenWidth - 30, height: 70))
+        let submitBtn = UIButton(frame: CGRect(x: 0, y: 20, width: kScreenWidth, height: 50))
         subBack.addSubview(submitBtn)
         submitBtn.setTitle("登  录", for: .normal)
-        submitBtn.layer.cornerRadius = 8
-        submitBtn.backgroundColor = UIColor.orange
-        submitBtn.setTitleColor(UIColor.white, for: .normal)
+        submitBtn.backgroundColor = UIColor.white
+        submitBtn.setTitleColor(UIColor.black, for: .normal)
+        submitBtn.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         submitBtn.addTarget(self, action: #selector(goIntoHomePage(sender:)), for: .touchUpInside)
         return subBack
     }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return UIView()
+    }
 
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 50
+        return 70
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -119,20 +119,11 @@ class LoginVC: BaseVC,UITableViewDelegate,UITableViewDataSource,UIAlertViewDeleg
     
     func goIntoHomePage(sender : UIButton) {
         self.view.endEditing(true)
-        print("哈哈")
-//        if (checkNil()) {
-//            let homePageVC = HomePageVC()
-//            self.navigationController?.pushViewController(homePageVC, animated: true)
-//        } else {
-//            let alert = UIAlertController(title: "提示", message: "用户名或密码为空", preferredStyle: .Alert)
-//            let cancle = UIAlertAction(title: "cancel", style: .Cancel, handler: nil)
-//            let ok = UIAlertAction(title: "ok", style: .Default, handler: { (check) -> Void in
-//                print("呵呵")
-//            })
-//            alert.addAction(cancle)
-//            alert.addAction(ok)
-//            self.presentViewController(alert, animated: true, completion: nil)
-//        }
+        if (!checkNil()) {
+            dismiss(animated: true, completion: nil)
+        } else {
+            ProgressHUDManager.showImage(image: UIImage(named: "v2_orderSuccess")!, status: "用户名或密码为空")
+        }
     }
     
     func checkNil() -> Bool {

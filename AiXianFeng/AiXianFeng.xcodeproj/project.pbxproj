@@ -502,6 +502,7 @@
 			children = (
 				0A1ED97F1EBC57E800F0AC45 /* SettingViewController.swift */,
 				0A1ED9841EBC643000F0AC45 /* AboutAuthorViewController.swift */,
+				0A309CC11EB0384F00E81590 /* LoginVC.swift */,
 			);
 			name = Setting;
 			sourceTree = "<group>";
@@ -1061,7 +1062,6 @@
 			children = (
 				0A309CC01EB0384F00E81590 /* BaseVC.swift */,
 				0A3A4D121EB1BA9D00C0F444 /* Theme.swift */,
-				0A309CC11EB0384F00E81590 /* LoginVC.swift */,
 				0A1ED9971EBDCFDB00F0AC45 /* ProgressHUDManager.swift */,
 				0A1ED9991EBDD00200F0AC45 /* ShareManager.swift */,
 				0A1ED99B1EBDD11000F0AC45 /* LFBActionSheet.swift */,

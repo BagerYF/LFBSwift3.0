@@ -52,10 +52,10 @@ class MainTabBarC: UITabBarController {
         let childArr = tabBarController.childViewControllers as NSArray
         let index = childArr.index(of: viewController)
         
-        if index == 2
-        {
-            return false
-        }
+//        if index == 2
+//        {
+//            return false
+//        }
         
         return true
     }
