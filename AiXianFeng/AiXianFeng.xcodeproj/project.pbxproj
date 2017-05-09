@@ -144,6 +144,10 @@
 		0ADC47131EC19787000C2BA8 /* ShopCartMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47121EC19787000C2BA8 /* ShopCartMarkerView.swift */; };
 		0ADC47151EC1978F000C2BA8 /* ShopCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47141EC1978F000C2BA8 /* ShopCartCell.swift */; };
 		0ADC47171EC1A025000C2BA8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47161EC1A025000C2BA8 /* BaseNavigationController.swift */; };
+		0ADC47191EC1A5A0000C2BA8 /* OrderPayWayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47181EC1A5A0000C2BA8 /* OrderPayWayViewController.swift */; };
+		0ADC471B1EC1ADA0000C2BA8 /* ShopCartGoodsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC471A1EC1ADA0000C2BA8 /* ShopCartGoodsListView.swift */; };
+		0ADC471D1EC1ADAB000C2BA8 /* CostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC471C1EC1ADAB000C2BA8 /* CostDetailView.swift */; };
+		0ADC471F1EC1ADB8000C2BA8 /* PayWayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC471E1EC1ADB8000C2BA8 /* PayWayView.swift */; };
 		0AF42C491EB5C68D00982AEB /* HeadResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42C471EB5C68D00982AEB /* HeadResources.swift */; };
 		0AF42C4A1EB5C68D00982AEB /* FreshHot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42C481EB5C68D00982AEB /* FreshHot.swift */; };
 		0AF42C5F1EB6EDC900982AEB /* AD in Resources */ = {isa = PBXBuildFile; fileRef = 0AF42C4E1EB6EDC900982AEB /* AD */; };
@@ -416,6 +420,10 @@
 		0ADC47121EC19787000C2BA8 /* ShopCartMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCartMarkerView.swift; sourceTree = "<group>"; };
 		0ADC47141EC1978F000C2BA8 /* ShopCartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCartCell.swift; sourceTree = "<group>"; };
 		0ADC47161EC1A025000C2BA8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		0ADC47181EC1A5A0000C2BA8 /* OrderPayWayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderPayWayViewController.swift; sourceTree = "<group>"; };
+		0ADC471A1EC1ADA0000C2BA8 /* ShopCartGoodsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCartGoodsListView.swift; sourceTree = "<group>"; };
+		0ADC471C1EC1ADAB000C2BA8 /* CostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostDetailView.swift; sourceTree = "<group>"; };
+		0ADC471E1EC1ADB8000C2BA8 /* PayWayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayWayView.swift; sourceTree = "<group>"; };
 		0AF42C471EB5C68D00982AEB /* HeadResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadResources.swift; sourceTree = "<group>"; };
 		0AF42C481EB5C68D00982AEB /* FreshHot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreshHot.swift; sourceTree = "<group>"; };
 		0AF42C4E1EB6EDC900982AEB /* AD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AD; sourceTree = "<group>"; };
@@ -524,6 +532,10 @@
 				0ADC470C1EC18E05000C2BA8 /* ShopCartSupermarketTableFooterView.swift */,
 				0A1ED9721EBC3C1E00F0AC45 /* YellowShopCarView.swift */,
 				0A1ED9741EBC3C9D00F0AC45 /* ShopCarRedDotView.swift */,
+				0ADC47181EC1A5A0000C2BA8 /* OrderPayWayViewController.swift */,
+				0ADC471C1EC1ADAB000C2BA8 /* CostDetailView.swift */,
+				0ADC471A1EC1ADA0000C2BA8 /* ShopCartGoodsListView.swift */,
+				0ADC471E1EC1ADB8000C2BA8 /* PayWayView.swift */,
 				0ADC47101EC19281000C2BA8 /* UserInfo.swift */,
 				0ADC47081EC18DD3000C2BA8 /* UserShopCarTool.swift */,
 			);
@@ -1323,6 +1335,7 @@
 				0A3A4CDD1EB0700400C0F444 /* MJRefreshAutoFooter.m in Sources */,
 				0A1ED99C1EBDD11000F0AC45 /* LFBActionSheet.swift in Sources */,
 				0ADC470F1EC18E14000C2BA8 /* ShopCartCommentsView.swift in Sources */,
+				0ADC471B1EC1ADA0000C2BA8 /* ShopCartGoodsListView.swift in Sources */,
 				0AF42C8C1EB6FE0B00982AEB /* MJFoundation.m in Sources */,
 				0A3A4CE41EB0700400C0F444 /* MJRefreshAutoStateFooter.m in Sources */,
 				0A3A4D0B1EB070BB00C0F444 /* SVIndefiniteAnimatedView.m in Sources */,
@@ -1330,6 +1343,7 @@
 				0A3A4CE71EB0700400C0F444 /* MJRefreshBackStateFooter.m in Sources */,
 				0AF42C931EB6FE0B00982AEB /* NSObject+MJProperty.m in Sources */,
 				0A3A4CF51EB0700400C0F444 /* SDWebImageDownloader.m in Sources */,
+				0ADC47191EC1A5A0000C2BA8 /* OrderPayWayViewController.swift in Sources */,
 				0A309CC81EB0384F00E81590 /* BaseVC.swift in Sources */,
 				0AF42CAE1EB96C0900982AEB /* SupermarketHeadView.swift in Sources */,
 				0A1EDA231EC016ED00F0AC45 /* OrderStatusCell.swift in Sources */,
@@ -1373,6 +1387,7 @@
 				0A3A4CFC1EB0700400C0F444 /* UIImage+WebP.m in Sources */,
 				0A1EDA021EBEC3B700F0AC45 /* AdressCell.swift in Sources */,
 				0A1EDA1F1EC016ED00F0AC45 /* OrderDetailViewController.swift in Sources */,
+				0ADC471D1EC1ADAB000C2BA8 /* CostDetailView.swift in Sources */,
 				0A3A4CF21EB0700400C0F444 /* SDImageCache.m in Sources */,
 				0A3A4CE61EB0700400C0F444 /* MJRefreshBackNormalFooter.m in Sources */,
 				0A1EDA2C1EC058BA00F0AC45 /* AnimationViewController.swift in Sources */,
@@ -1390,6 +1405,7 @@
 				0A309CCF1EB0384F00E81590 /* WebVC.swift in Sources */,
 				0A3A4CFD1EB0700400C0F444 /* UIImageView+HighlightedWebCache.m in Sources */,
 				0A3A4CDF1EB0700400C0F444 /* MJRefreshComponent.m in Sources */,
+				0ADC471F1EC1ADB8000C2BA8 /* PayWayView.swift in Sources */,
 				0A1EDA0B1EBEEDBD00F0AC45 /* BindingCouponView.swift in Sources */,
 				0A1ED97E1EBC57BD00F0AC45 /* MineCell.swift in Sources */,
 				0AF42C9A1EB76A4200982AEB /* HomeTableHeadView.swift in Sources */,

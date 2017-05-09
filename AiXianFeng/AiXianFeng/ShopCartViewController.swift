@@ -45,19 +45,15 @@ class ShopCartViewController: BaseVC {
             showshopCarEmptyUI()
         } else {
             
-//            if !ProgressHUDManager.isVisible() {
-//                ProgressHUDManager.setBackgroundColor(color: UIColor.colorWithCustom(230, g: 230, b: 230))
-//                ProgressHUDManager.showWithStatus(status: "正在加载商品信息")
-//            }
-//            
-//            let time = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
-//            dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
-//                
-//                tmpSelf!.showProductView()
-//                ProgressHUDManager.dismiss()
-//            }
+            if !ProgressHUDManager.isVisible() {
+                ProgressHUDManager.setBackgroundColor(color: UIColor.colorWithCustom(r: 230, g: 230, b: 230))
+                ProgressHUDManager.showWithStatus(status: "正在加载商品信息")
+            }
             
-            showProductView()
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5, execute: {
+                tmpSelf!.showProductView()
+                ProgressHUDManager.dismiss()
+            })
         }
     }
     
@@ -262,8 +258,8 @@ class ShopCartViewController: BaseVC {
 extension ShopCartViewController: ShopCartSupermarketTableFooterViewDelegate {
     
     func supermarketTableFooterDetermineButtonClick() {
-//        let orderPayVC = OrderPayWayViewController()
-//        navigationController?.pushViewController(orderPayVC, animated: true)
+        let orderPayVC = OrderPayWayViewController()
+        navigationController?.pushViewController(orderPayVC, animated: true)
     }
 }
 

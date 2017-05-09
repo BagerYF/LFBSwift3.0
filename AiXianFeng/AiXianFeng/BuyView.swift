@@ -145,6 +145,7 @@ class BuyView: UIView {
         ShopCarRedDotView.sharedRedDotView.addProductToRedDotView(animation: true)
         UserShopCarTool.sharedUserShopCar.addSupermarkProductToShopCar(goods: goods!)
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: LFBShopCarBuyPriceDidChangeNotification), object: nil)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: LFBShopCarBuyProductNumberDidChangeNotification), object: nil)
     }
     
     func reduceGoodsButtonClick() {
@@ -165,6 +166,7 @@ class BuyView: UIView {
         
         ShopCarRedDotView.sharedRedDotView.reduceProductToRedDotView(animation: true)
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: LFBShopCarBuyPriceDidChangeNotification), object: nil)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: LFBShopCarBuyProductNumberDidChangeNotification), object: nil)
     }
 }
 

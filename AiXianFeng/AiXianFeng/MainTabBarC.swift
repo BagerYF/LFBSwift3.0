@@ -52,7 +52,7 @@ class MainTabBarC: UITabBarController, UITabBarControllerDelegate {
         if item.tag == 2 {
             let vc = childViewControllers[selectedIndex]
             let shopCar = ShopCartViewController()
-            let nav = UINavigationController(rootViewController: shopCar)
+            let nav = BaseNavigationController(rootViewController: shopCar)
             vc.present(nav, animated: true, completion: nil)
             
             return

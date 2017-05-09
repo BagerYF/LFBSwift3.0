@@ -28,12 +28,12 @@ class HomePageVC: AnimationViewController {
             collectionView?.reloadData()
         }
 
+        addHomeNotification()
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addHomeNotification()
         
         initData()
         
@@ -73,7 +73,14 @@ class HomePageVC: AnimationViewController {
     }
     
     func shopCarBuyProductNumberDidChange() {
-        collectionView?.reloadData()
+        let redDotView = ShopCarRedDotView.sharedRedDotView
+        let carItem = tabBarController?.tabBar.items?[2]
+        if redDotView.buyNumber == 0 {
+            carItem?.badgeValue = nil
+        }
+        else {
+            carItem?.badgeValue = "\(redDotView.buyNumber)"
+        }
     }
 
     
