@@ -8,11 +8,11 @@
 
 import UIKit
 
-class MainTabBarC: UITabBarController {
+class MainTabBarC: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        delegate = self
         setupTabbar()
         buildMainTabBarChildViewController()
     }
@@ -30,7 +30,7 @@ class MainTabBarC: UITabBarController {
         
         tabBarControllerAddChildViewController(childView: HomePageVC(), title: "首页", imageName: "v2_home", selectedImageName: "v2_home_r", tag: 0)
         tabBarControllerAddChildViewController(childView: MarketVC(), title: "闪电超市", imageName: "v2_order", selectedImageName: "v2_order_r", tag: 1)
-        tabBarControllerAddChildViewController(childView: TestVC(), title: "购物车", imageName: "shopCart", selectedImageName: "shopCart", tag: 2)
+        tabBarControllerAddChildViewController(childView: ShopCartViewController(), title: "购物车", imageName: "shopCart", selectedImageName: "shopCart", tag: 2)
         tabBarControllerAddChildViewController(childView: MineVC(), title: "我的", imageName: "v2_my", selectedImageName: "v2_my_r", tag: 3)
     }
     
@@ -40,21 +40,34 @@ class MainTabBarC: UITabBarController {
         
         childView.tabBarItem = vcItem
         
-        let navigationVC = UINavigationController(rootViewController:childView)
+        let navigationVC = BaseNavigationController(rootViewController:childView)
         navigationVC.navigationBar.barTintColor = YFMainYellowColor
         navigationVC.navigationBar.tintColor = UIColor.black
         navigationVC.navigationBar.isTranslucent = false
         addChildViewController(navigationVC)
     }
     
-    func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        
+        if item.tag == 2 {
+            let vc = childViewControllers[selectedIndex]
+            let shopCar = ShopCartViewController()
+            let nav = UINavigationController(rootViewController: shopCar)
+            vc.present(nav, animated: true, completion: nil)
+            
+            return
+        }
+    }
+
+    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         let childArr = tabBarController.childViewControllers as NSArray
         let index = childArr.index(of: viewController)
         
-//        if index == 2
-//        {
-//            return false
-//        }
+        if index == 2
+        {
+            return false
+        }
         
         return true
     }

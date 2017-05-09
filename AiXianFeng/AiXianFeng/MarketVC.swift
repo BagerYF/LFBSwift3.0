@@ -24,7 +24,7 @@ class MarketVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        addNotification()
+        addNotification()
         
         initData()
         
@@ -42,23 +42,23 @@ class MarketVC: BaseVC {
         categoryDic = Supermarket.loadSupermarketData().1
     }
     
-//    override func viewWillAppear(animated: Bool) {
-//        super.viewWillAppear(animated)
-//        
-//        if productsVC.productsTableView != nil {
-//            productsVC.productsTableView?.reloadData()
-//        }
-//        NSNotificationCenter.defaultCenter().postNotificationName("LFBSearchViewControllerDeinit", object: nil)
-//        navigationController?.navigationBar.barTintColor = LFBNavigationYellowColor
-//    }
-//    
-//    deinit {
-//        NSNotificationCenter.defaultCenter().removeObserver(self)
-//    }
-//    
-//    private func addNotification() {
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "shopCarBuyProductNumberDidChange", name: LFBShopCarBuyProductNumberDidChangeNotification, object: nil)
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if productsVC.productsTableView != nil {
+            productsVC.productsTableView?.reloadData()
+        }
+//        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LFBSearchViewControllerDeinit"), object: nil)
+        navigationController?.navigationBar.barTintColor = YFMainYellowColor
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    private func addNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(MarketVC.shopCarBuyProductNumberDidChange), name: NSNotification.Name(rawValue: LFBShopCarBuyProductNumberDidChangeNotification), object: nil)
+    }
     
     func shopCarBuyProductNumberDidChange() {
         if productsVC.productsTableView != nil {
@@ -132,10 +132,10 @@ class MarketVC: BaseVC {
     
     // MARK: - Private Method
     func showProgressHUD() {
-//        ProgressHUDManager.setBackgroundColor(UIColor.colorWithCustom(230, g: 230, b: 230))
+//        ProgressHUDManager.setBackgroundColor(color: UIColor.colorWithCustom(r: 230, g: 230, b: 230))
 //        view.backgroundColor = UIColor.white
 //        if !ProgressHUDManager.isVisible() {
-//            ProgressHUDManager.showWithStatus("正在加载中")
+//            ProgressHUDManager.showWithStatus(status: "正在加载中")
 //        }
     }
 }

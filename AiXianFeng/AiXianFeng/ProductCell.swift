@@ -47,10 +47,10 @@ class ProductCell: UITableViewCell {
         return specificsLabel
         }()
     
-//    private lazy var buyView: BuyView = {
-//        let buyView = BuyView()
-//        return buyView
-//        }()
+    private lazy var buyView: BuyView = {
+        let buyView = BuyView()
+        return buyView
+        }()
     
     private lazy var lineView: UIView = {
         let lineView = UIView()
@@ -75,14 +75,14 @@ class ProductCell: UITableViewCell {
         addSubview(fineImageView)
         addSubview(giveImageView)
         addSubview(specificsLabel)
-//        addSubview(buyView)
+        addSubview(buyView)
         
-//        weak var tmpSelf = self
-//        buyView.clickAddShopCar = {
-//            if tmpSelf!.addProductClick != nil {
-//                tmpSelf!.addProductClick!(imageView: tmpSelf!.goodsImageView)
-//            }
-//        }
+        weak var tmpSelf = self
+        buyView.clickAddShopCar = {
+            if tmpSelf!.addProductClick != nil {
+                tmpSelf!.addProductClick!(tmpSelf!.goodsImageView)
+            }
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -123,7 +123,7 @@ class ProductCell: UITableViewCell {
             addSubview(discountPriceView!)
             
             specificsLabel.text = goods?.specifics
-//            buyView.goods = goods
+            buyView.goods = goods
         }
     }
     
@@ -145,7 +145,7 @@ class ProductCell: UITableViewCell {
         specificsLabel.frame = CGRect(x: goodsImageView.x + goodsImageView.width, y: giveImageView.y + giveImageView.height, width: width, height: 20)
         discountPriceView?.frame = CGRect(x: goodsImageView.x + goodsImageView.width, y: specificsLabel.y + specificsLabel.height, width: 60, height: height - specificsLabel.y - specificsLabel.height)
         lineView.frame = CGRect(x: HotViewMargin, y: height - 1, width: width - HotViewMargin, height: 1)
-//        buyView.frame = CGRectMake(width - 85, height - 30, 80, 25)
+        buyView.frame = CGRect(x: width - 85, y: height - 30, width: 80, height: 25)
     }
 }
 

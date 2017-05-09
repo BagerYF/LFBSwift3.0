@@ -264,9 +264,9 @@ extension HomePageVC: UICollectionViewDelegate, UICollectionViewDataSource, UICo
     // MARK: - ScrollViewDelegate
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         // 商品添加到购物车动画
-//        if animationLayers?.count > 0 {
+//        if (animationLayers?.count)! > 0 {
 //            let transitionLayer = animationLayers![0]
-//            transitionLayer.hidden = true
+//            transitionLayer.isHidden = true
 //        }
         
         if scrollView.contentOffset.y <= scrollView.contentSize.height {

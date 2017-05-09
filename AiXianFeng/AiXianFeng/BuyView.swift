@@ -143,7 +143,7 @@ class BuyView: UIView {
         }
         
         ShopCarRedDotView.sharedRedDotView.addProductToRedDotView(animation: true)
-//        UserShopCarTool.sharedUserShopCar.addSupermarkProductToShopCar(goods!)
+        UserShopCarTool.sharedUserShopCar.addSupermarkProductToShopCar(goods: goods!)
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: LFBShopCarBuyPriceDidChangeNotification), object: nil)
     }
     
@@ -158,7 +158,7 @@ class BuyView: UIView {
             reduceGoodsButton.isHidden = true && !zearIsShow
             buyCountLabel.isHidden = true && !zearIsShow
             buyCountLabel.text = zearIsShow ? "0" : ""
-//            UserShopCarTool.sharedUserShopCar.removeSupermarketProduct(goods!)
+            UserShopCarTool.sharedUserShopCar.removeSupermarketProduct(goods: goods!)
         } else {
             buyCountLabel.text = "\(buyNumber)"
         }

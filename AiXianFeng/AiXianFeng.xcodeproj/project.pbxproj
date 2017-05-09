@@ -78,7 +78,6 @@
 		0A1EDA291EC030A600F0AC45 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA281EC030A600F0AC45 /* UIBarButtonItem+Extension.swift */; };
 		0A1EDA2C1EC058BA00F0AC45 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA2B1EC058BA00F0AC45 /* AnimationViewController.swift */; };
 		0A1EDA2E1EC0635200F0AC45 /* BuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA2D1EC0635200F0AC45 /* BuyView.swift */; };
-		0A1EDA301EC0717D00F0AC45 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA2F1EC0717D00F0AC45 /* TestVC.swift */; };
 		0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */; };
 		0A309C931EADC29C00E81590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A309C921EADC29C00E81590 /* AppDelegate.swift */; };
 		0A309C981EADC29C00E81590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A309C961EADC29C00E81590 /* Main.storyboard */; };
@@ -136,6 +135,15 @@
 		0A3A4D1F1EB57C0100C0F444 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A4D191EB57C0100C0F444 /* UIView+Extension.swift */; };
 		0A3A4D221EB57C0100C0F444 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A4D1C1EB57C0100C0F444 /* String + Extension.swift */; };
 		0A3A4D231EB57C0100C0F444 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A4D1D1EB57C0100C0F444 /* UIImage + Extension.swift */; };
+		0ADC47071EC18CC7000C2BA8 /* ShopCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47061EC18CC7000C2BA8 /* ShopCartViewController.swift */; };
+		0ADC47091EC18DD3000C2BA8 /* UserShopCarTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47081EC18DD3000C2BA8 /* UserShopCarTool.swift */; };
+		0ADC470B1EC18DF1000C2BA8 /* ReceiptAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC470A1EC18DF1000C2BA8 /* ReceiptAddressView.swift */; };
+		0ADC470D1EC18E05000C2BA8 /* ShopCartSupermarketTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC470C1EC18E05000C2BA8 /* ShopCartSupermarketTableFooterView.swift */; };
+		0ADC470F1EC18E14000C2BA8 /* ShopCartCommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC470E1EC18E14000C2BA8 /* ShopCartCommentsView.swift */; };
+		0ADC47111EC19281000C2BA8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47101EC19281000C2BA8 /* UserInfo.swift */; };
+		0ADC47131EC19787000C2BA8 /* ShopCartMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47121EC19787000C2BA8 /* ShopCartMarkerView.swift */; };
+		0ADC47151EC1978F000C2BA8 /* ShopCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47141EC1978F000C2BA8 /* ShopCartCell.swift */; };
+		0ADC47171EC1A025000C2BA8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47161EC1A025000C2BA8 /* BaseNavigationController.swift */; };
 		0AF42C491EB5C68D00982AEB /* HeadResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42C471EB5C68D00982AEB /* HeadResources.swift */; };
 		0AF42C4A1EB5C68D00982AEB /* FreshHot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42C481EB5C68D00982AEB /* FreshHot.swift */; };
 		0AF42C5F1EB6EDC900982AEB /* AD in Resources */ = {isa = PBXBuildFile; fileRef = 0AF42C4E1EB6EDC900982AEB /* AD */; };
@@ -297,7 +305,6 @@
 		0A1EDA281EC030A600F0AC45 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		0A1EDA2B1EC058BA00F0AC45 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		0A1EDA2D1EC0635200F0AC45 /* BuyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyView.swift; sourceTree = "<group>"; };
-		0A1EDA2F1EC0717D00F0AC45 /* TestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		0A309C8F1EADC29C00E81590 /* AiXianFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiXianFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A309C921EADC29C00E81590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -400,6 +407,15 @@
 		0A3A4D191EB57C0100C0F444 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		0A3A4D1C1EB57C0100C0F444 /* String + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		0A3A4D1D1EB57C0100C0F444 /* UIImage + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
+		0ADC47061EC18CC7000C2BA8 /* ShopCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCartViewController.swift; sourceTree = "<group>"; };
+		0ADC47081EC18DD3000C2BA8 /* UserShopCarTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserShopCarTool.swift; sourceTree = "<group>"; };
+		0ADC470A1EC18DF1000C2BA8 /* ReceiptAddressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptAddressView.swift; sourceTree = "<group>"; };
+		0ADC470C1EC18E05000C2BA8 /* ShopCartSupermarketTableFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCartSupermarketTableFooterView.swift; sourceTree = "<group>"; };
+		0ADC470E1EC18E14000C2BA8 /* ShopCartCommentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCartCommentsView.swift; sourceTree = "<group>"; };
+		0ADC47101EC19281000C2BA8 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		0ADC47121EC19787000C2BA8 /* ShopCartMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCartMarkerView.swift; sourceTree = "<group>"; };
+		0ADC47141EC1978F000C2BA8 /* ShopCartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCartCell.swift; sourceTree = "<group>"; };
+		0ADC47161EC1A025000C2BA8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0AF42C471EB5C68D00982AEB /* HeadResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadResources.swift; sourceTree = "<group>"; };
 		0AF42C481EB5C68D00982AEB /* FreshHot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreshHot.swift; sourceTree = "<group>"; };
 		0AF42C4E1EB6EDC900982AEB /* AD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AD; sourceTree = "<group>"; };
@@ -499,10 +515,17 @@
 		0A1ED96F1EBC25E000F0AC45 /* ShopCart */ = {
 			isa = PBXGroup;
 			children = (
+				0ADC47061EC18CC7000C2BA8 /* ShopCartViewController.swift */,
+				0ADC470A1EC18DF1000C2BA8 /* ReceiptAddressView.swift */,
 				0A1ED9701EBC262B00F0AC45 /* ProductDetailVC.swift */,
+				0ADC470E1EC18E14000C2BA8 /* ShopCartCommentsView.swift */,
+				0ADC47121EC19787000C2BA8 /* ShopCartMarkerView.swift */,
+				0ADC47141EC1978F000C2BA8 /* ShopCartCell.swift */,
+				0ADC470C1EC18E05000C2BA8 /* ShopCartSupermarketTableFooterView.swift */,
 				0A1ED9721EBC3C1E00F0AC45 /* YellowShopCarView.swift */,
 				0A1ED9741EBC3C9D00F0AC45 /* ShopCarRedDotView.swift */,
-				0A1EDA2F1EC0717D00F0AC45 /* TestVC.swift */,
+				0ADC47101EC19281000C2BA8 /* UserInfo.swift */,
+				0ADC47081EC18DD3000C2BA8 /* UserShopCarTool.swift */,
 			);
 			name = ShopCart;
 			sourceTree = "<group>";
@@ -1120,6 +1143,7 @@
 				0A1ED9971EBDCFDB00F0AC45 /* ProgressHUDManager.swift */,
 				0A1ED9991EBDD00200F0AC45 /* ShareManager.swift */,
 				0A1ED99B1EBDD11000F0AC45 /* LFBActionSheet.swift */,
+				0ADC47161EC1A025000C2BA8 /* BaseNavigationController.swift */,
 			);
 			name = BaseView;
 			sourceTree = "<group>";
@@ -1292,11 +1316,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ADC470B1EC18DF1000C2BA8 /* ReceiptAddressView.swift in Sources */,
 				0A3A4CF91EB0700400C0F444 /* UIButton+WebCache.m in Sources */,
 				0AF42C901EB6FE0B00982AEB /* NSObject+MJClass.m in Sources */,
 				0A3A4CF71EB0700400C0F444 /* SDWebImageManager.m in Sources */,
 				0A3A4CDD1EB0700400C0F444 /* MJRefreshAutoFooter.m in Sources */,
 				0A1ED99C1EBDD11000F0AC45 /* LFBActionSheet.swift in Sources */,
+				0ADC470F1EC18E14000C2BA8 /* ShopCartCommentsView.swift in Sources */,
 				0AF42C8C1EB6FE0B00982AEB /* MJFoundation.m in Sources */,
 				0A3A4CE41EB0700400C0F444 /* MJRefreshAutoStateFooter.m in Sources */,
 				0A3A4D0B1EB070BB00C0F444 /* SVIndefiniteAnimatedView.m in Sources */,
@@ -1311,7 +1337,9 @@
 				0A3A4CF31EB0700400C0F444 /* SDWebImageCompat.m in Sources */,
 				0A1ED9981EBDCFDB00F0AC45 /* ProgressHUDManager.swift in Sources */,
 				0A1ED9821EBC5EED00F0AC45 /* UpImageDownTextButton.swift in Sources */,
+				0ADC470D1EC18E05000C2BA8 /* ShopCartSupermarketTableFooterView.swift in Sources */,
 				0A1ED9801EBC57E800F0AC45 /* SettingViewController.swift in Sources */,
+				0ADC47091EC18DD3000C2BA8 /* UserShopCarTool.swift in Sources */,
 				0A3A4CEA1EB0700400C0F444 /* MJRefreshStateHeader.m in Sources */,
 				0A1ED97C1EBC57B000F0AC45 /* MineHeadView.swift in Sources */,
 				0A1EDA0A1EBEEDBD00F0AC45 /* CouponCell.swift in Sources */,
@@ -1328,13 +1356,14 @@
 				0AF42C8E1EB6FE0B00982AEB /* MJPropertyKey.m in Sources */,
 				0A1EDA001EBEC3B200F0AC45 /* EditAdressViewController.swift in Sources */,
 				0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */,
+				0ADC47171EC1A025000C2BA8 /* BaseNavigationController.swift in Sources */,
 				0A1EDA101EBEF7AF00F0AC45 /* MessageViewController.swift in Sources */,
 				0AF42C961EB75F2100982AEB /* DiscountPriceView.swift in Sources */,
 				0A1ED98E1EBC7C0900F0AC45 /* IdeaViewController.swift in Sources */,
 				0A3A4D221EB57C0100C0F444 /* String + Extension.swift in Sources */,
-				0A1EDA301EC0717D00F0AC45 /* TestVC.swift in Sources */,
 				0A3A4CEF1EB0700400C0F444 /* UIView+MJExtension.m in Sources */,
 				0AF42CAC1EB96BFB00982AEB /* ProductsViewController.swift in Sources */,
+				0ADC47071EC18CC7000C2BA8 /* ShopCartViewController.swift in Sources */,
 				0AF42C981EB7654000982AEB /* HomeCollectionFooterView.swift in Sources */,
 				0A3A4CFF1EB0700400C0F444 /* UIView+WebCacheOperation.m in Sources */,
 				0AF42CB41EB96C3B00982AEB /* Supermarket.swift in Sources */,
@@ -1376,12 +1405,14 @@
 				0A3A4CF11EB0700400C0F444 /* NSData+ImageContentType.m in Sources */,
 				0AF42C4A1EB5C68D00982AEB /* FreshHot.swift in Sources */,
 				0A3A4CDE1EB0700400C0F444 /* MJRefreshBackFooter.m in Sources */,
+				0ADC47151EC1978F000C2BA8 /* ShopCartCell.swift in Sources */,
 				0A1EDA271EC016FD00F0AC45 /* OrderData.swift in Sources */,
 				0A1EDA211EC016ED00F0AC45 /* OrderUserDetailView.swift in Sources */,
 				0A309C931EADC29C00E81590 /* AppDelegate.swift in Sources */,
 				0A3A4CE01EB0700400C0F444 /* MJRefreshFooter.m in Sources */,
 				0A1ED9711EBC262B00F0AC45 /* ProductDetailVC.swift in Sources */,
 				0A3A4CF41EB0700400C0F444 /* SDWebImageDecoder.m in Sources */,
+				0ADC47131EC19787000C2BA8 /* ShopCartMarkerView.swift in Sources */,
 				0AF42C911EB6FE0B00982AEB /* NSObject+MJCoding.m in Sources */,
 				0A1ED98C1EBC7BFE00F0AC45 /* HelpDetailViewController.swift in Sources */,
 				0A1ED9FE1EBEC3AC00F0AC45 /* MyAdressViewController.swift in Sources */,
@@ -1391,6 +1422,7 @@
 				0A3A4CEC1EB0700400C0F444 /* MJRefreshConst.m in Sources */,
 				0AF42C8D1EB6FE0B00982AEB /* MJProperty.m in Sources */,
 				0A3A4D111EB1811800C0F444 /* MainTabBarC.swift in Sources */,
+				0ADC47111EC19281000C2BA8 /* UserInfo.swift in Sources */,
 				0A1ED98A1EBC7BF800F0AC45 /* HelpHeadView.swift in Sources */,
 				0A1EDA091EBEEDBD00F0AC45 /* CouponViewController.swift in Sources */,
 				0A1ED97A1EBC57A600F0AC45 /* MineTabeHeadView.swift in Sources */,

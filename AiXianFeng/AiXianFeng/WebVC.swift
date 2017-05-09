@@ -28,7 +28,6 @@ class WebVC: BaseVC {
     
     convenience init(navigationTitle: String, urlStr: String) {
         self.init(nibName: nil, bundle: nil)
-        super.setBackBtn()
         navigationItem.title = navigationTitle
         webView.loadRequest(URLRequest(url: URL(string: urlStr)!))
         self.urlStr = urlStr

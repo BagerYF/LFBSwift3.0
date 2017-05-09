@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProductsViewController: BaseVC {
+class ProductsViewController: AnimationViewController {
     
     let headViewIdentifier   = "supermarketHeadView"
     var lastOffsetY: CGFloat = 0
@@ -42,15 +42,15 @@ class ProductsViewController: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "shopCarBuyProductNumberDidChange", name: LFBShopCarBuyProductNumberDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ProductsViewController.shopCarBuyProductNumberDidChange), name: NSNotification.Name(rawValue: LFBShopCarBuyProductNumberDidChangeNotification), object: nil)
         
         view = UIView(frame: CGRect(x: kScreenWidth * 0.25, y: 0, width: kScreenWidth * 0.75, height: kScreenHeight - 64))
         buildProductsTableView()
     }
     
-//    deinit {
-//        NSNotificationCenter.defaultCenter().removeObserver(self)
-//    }
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
     
     // MARK: - Build UI
     private func buildProductsTableView() {
@@ -115,11 +115,11 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource {
         let tempArr : Array<Any> = categoryPDic[categoryStr!] as! Array
         let goods = tempArr[indexPath.row]
         cell.goods = goods as? Goods
-//
-//        weak var tmpSelf = self
-//        cell.addProductClick = { (imageView) -> () in
-//            tmpSelf?.addProductsAnimation(imageView)
-//        }
+
+        weak var tmpSelf = self
+        cell.addProductClick = { (imageView) -> () in
+            tmpSelf?.addProductsAnimation(imageView: imageView)
+        }
         
         return cell
     }
@@ -167,9 +167,9 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource {
 extension ProductsViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        if animationLayers?.count > 0 {
+//        if (animationLayers?.count)! > 0 {
 //            let transitionLayer = animationLayers![0]
-//            transitionLayer.hidden = true
+//            transitionLayer.isHidden = true
 //        }
         
         isScrollDown = lastOffsetY < scrollView.contentOffset.y
