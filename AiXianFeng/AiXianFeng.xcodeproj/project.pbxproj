@@ -76,6 +76,9 @@
 		0A1EDA251EC016F300F0AC45 /* MyOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA241EC016F300F0AC45 /* MyOrderCell.swift */; };
 		0A1EDA271EC016FD00F0AC45 /* OrderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA261EC016FD00F0AC45 /* OrderData.swift */; };
 		0A1EDA291EC030A600F0AC45 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA281EC030A600F0AC45 /* UIBarButtonItem+Extension.swift */; };
+		0A1EDA2C1EC058BA00F0AC45 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA2B1EC058BA00F0AC45 /* AnimationViewController.swift */; };
+		0A1EDA2E1EC0635200F0AC45 /* BuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA2D1EC0635200F0AC45 /* BuyView.swift */; };
+		0A1EDA301EC0717D00F0AC45 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EDA2F1EC0717D00F0AC45 /* TestVC.swift */; };
 		0A2A055F1EB06A750013CCB3 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */; };
 		0A309C931EADC29C00E81590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A309C921EADC29C00E81590 /* AppDelegate.swift */; };
 		0A309C981EADC29C00E81590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A309C961EADC29C00E81590 /* Main.storyboard */; };
@@ -292,6 +295,9 @@
 		0A1EDA241EC016F300F0AC45 /* MyOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrderCell.swift; sourceTree = "<group>"; };
 		0A1EDA261EC016FD00F0AC45 /* OrderData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderData.swift; sourceTree = "<group>"; };
 		0A1EDA281EC030A600F0AC45 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		0A1EDA2B1EC058BA00F0AC45 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		0A1EDA2D1EC0635200F0AC45 /* BuyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyView.swift; sourceTree = "<group>"; };
+		0A1EDA2F1EC0717D00F0AC45 /* TestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		0A309C8F1EADC29C00E81590 /* AiXianFeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AiXianFeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A309C921EADC29C00E81590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -496,6 +502,7 @@
 				0A1ED9701EBC262B00F0AC45 /* ProductDetailVC.swift */,
 				0A1ED9721EBC3C1E00F0AC45 /* YellowShopCarView.swift */,
 				0A1ED9741EBC3C9D00F0AC45 /* ShopCarRedDotView.swift */,
+				0A1EDA2F1EC0717D00F0AC45 /* TestVC.swift */,
 			);
 			name = ShopCart;
 			sourceTree = "<group>";
@@ -504,14 +511,7 @@
 			isa = PBXGroup;
 			children = (
 				0A1ED9771EBC56BB00F0AC45 /* MineVC.swift */,
-				0A1EDA161EC016ED00F0AC45 /* OrderViewController.swift */,
-				0A1EDA171EC016ED00F0AC45 /* OrderStatuslViewController.swift */,
-				0A1EDA181EC016ED00F0AC45 /* OrderDetailViewController.swift */,
-				0A1EDA191EC016ED00F0AC45 /* OrderDetailView.swift */,
-				0A1EDA1A1EC016ED00F0AC45 /* OrderUserDetailView.swift */,
-				0A1EDA1B1EC016ED00F0AC45 /* OrderGoodsListView.swift */,
-				0A1EDA1C1EC016ED00F0AC45 /* OrderStatusCell.swift */,
-				0A1EDA241EC016F300F0AC45 /* MyOrderCell.swift */,
+				0A1EDA2A1EC0563A00F0AC45 /* Order */,
 				0A1EDA151EC016B500F0AC45 /* Message */,
 				0A1EDA0E1EBEF79100F0AC45 /* Coupon */,
 				0A1EDA051EBEED0C00F0AC45 /* Address */,
@@ -537,6 +537,11 @@
 		0A1ED9861EBC7BAC00F0AC45 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0A1EDA191EC016ED00F0AC45 /* OrderDetailView.swift */,
+				0A1EDA1A1EC016ED00F0AC45 /* OrderUserDetailView.swift */,
+				0A1EDA1B1EC016ED00F0AC45 /* OrderGoodsListView.swift */,
+				0A1EDA1C1EC016ED00F0AC45 /* OrderStatusCell.swift */,
+				0A1EDA241EC016F300F0AC45 /* MyOrderCell.swift */,
 				0A1EDA011EBEC3B700F0AC45 /* AdressCell.swift */,
 				0A1ED9911EBDC55B00F0AC45 /* AnswerCell.swift */,
 				0A1ED97B1EBC57B000F0AC45 /* MineHeadView.swift */,
@@ -730,6 +735,16 @@
 			name = Message;
 			sourceTree = "<group>";
 		};
+		0A1EDA2A1EC0563A00F0AC45 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				0A1EDA161EC016ED00F0AC45 /* OrderViewController.swift */,
+				0A1EDA171EC016ED00F0AC45 /* OrderStatuslViewController.swift */,
+				0A1EDA181EC016ED00F0AC45 /* OrderDetailViewController.swift */,
+			);
+			name = Order;
+			sourceTree = "<group>";
+		};
 		0A2A05601EB06A900013CCB3 /* SettingUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -766,13 +781,11 @@
 		0A309C911EADC29C00E81590 /* AiXianFeng */ = {
 			isa = PBXGroup;
 			children = (
-				0A309C921EADC29C00E81590 /* AppDelegate.swift */,
-				0A3A4D101EB1811800C0F444 /* MainTabBarC.swift */,
-				0A1ED9761EBC56A400F0AC45 /* Mine */,
-				0A1ED96F1EBC25E000F0AC45 /* ShopCart */,
 				0AF42CAA1EB885FC00982AEB /* BaseView */,
 				0A3A4D0F1EB0718200C0F444 /* HomePage */,
 				0AF42CA81EB8859100982AEB /* Market */,
+				0A1ED96F1EBC25E000F0AC45 /* ShopCart */,
+				0A1ED9761EBC56A400F0AC45 /* Mine */,
 				0AF42CA91EB8859D00982AEB /* WebView */,
 				0A3A4D241EB57C0800C0F444 /* Extension */,
 				0A3A4C8D1EB06FE800C0F444 /* OtherSDK */,
@@ -1046,6 +1059,7 @@
 			isa = PBXGroup;
 			children = (
 				0A3A4D161EB57B4000C0F444 /* HomeCell.swift */,
+				0A1EDA2D1EC0635200F0AC45 /* BuyView.swift */,
 				0AF42C991EB76A4200982AEB /* HomeTableHeadView.swift */,
 				0AF42CA01EB8288A00982AEB /* PageScrollView.swift */,
 				0AF42C9E1EB8287300982AEB /* HotView.swift */,
@@ -1060,6 +1074,7 @@
 			isa = PBXGroup;
 			children = (
 				0A2A055E1EB06A750013CCB3 /* HomePageVC.swift */,
+				0A1EDA2B1EC058BA00F0AC45 /* AnimationViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -1098,6 +1113,8 @@
 		0AF42CAA1EB885FC00982AEB /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				0A309C921EADC29C00E81590 /* AppDelegate.swift */,
+				0A3A4D101EB1811800C0F444 /* MainTabBarC.swift */,
 				0A309CC01EB0384F00E81590 /* BaseVC.swift */,
 				0A3A4D121EB1BA9D00C0F444 /* Theme.swift */,
 				0A1ED9971EBDCFDB00F0AC45 /* ProgressHUDManager.swift */,
@@ -1315,6 +1332,7 @@
 				0AF42C961EB75F2100982AEB /* DiscountPriceView.swift in Sources */,
 				0A1ED98E1EBC7C0900F0AC45 /* IdeaViewController.swift in Sources */,
 				0A3A4D221EB57C0100C0F444 /* String + Extension.swift in Sources */,
+				0A1EDA301EC0717D00F0AC45 /* TestVC.swift in Sources */,
 				0A3A4CEF1EB0700400C0F444 /* UIView+MJExtension.m in Sources */,
 				0AF42CAC1EB96BFB00982AEB /* ProductsViewController.swift in Sources */,
 				0AF42C981EB7654000982AEB /* HomeCollectionFooterView.swift in Sources */,
@@ -1328,6 +1346,7 @@
 				0A1EDA1F1EC016ED00F0AC45 /* OrderDetailViewController.swift in Sources */,
 				0A3A4CF21EB0700400C0F444 /* SDImageCache.m in Sources */,
 				0A3A4CE61EB0700400C0F444 /* MJRefreshBackNormalFooter.m in Sources */,
+				0A1EDA2C1EC058BA00F0AC45 /* AnimationViewController.swift in Sources */,
 				0AF42C9F1EB8287300982AEB /* HotView.swift in Sources */,
 				0A1EDA221EC016ED00F0AC45 /* OrderGoodsListView.swift in Sources */,
 				0A1ED9731EBC3C1E00F0AC45 /* YellowShopCarView.swift in Sources */,
@@ -1345,6 +1364,7 @@
 				0A1EDA0B1EBEEDBD00F0AC45 /* BindingCouponView.swift in Sources */,
 				0A1ED97E1EBC57BD00F0AC45 /* MineCell.swift in Sources */,
 				0AF42C9A1EB76A4200982AEB /* HomeTableHeadView.swift in Sources */,
+				0A1EDA2E1EC0635200F0AC45 /* BuyView.swift in Sources */,
 				0A3A4CE31EB0700400C0F444 /* MJRefreshAutoNormalFooter.m in Sources */,
 				0A309CC91EB0384F00E81590 /* LoginVC.swift in Sources */,
 				0A3A4CE21EB0700400C0F444 /* MJRefreshAutoGifFooter.m in Sources */,

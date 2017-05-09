@@ -1,12 +1,11 @@
 //
-//  UIImage + Extension.swift
-//  LoveFreshBeen
+//  MineVC.swift
+//  AiXianFeng
 //
-//  Created by 维尼的小熊 on 16/1/12.
-//  Copyright © 2016年 tianzhongtao. All rights reserved.
-//  GitHub地址:https://github.com/ZhongTaoTian/LoveFreshBeen
-//  Blog讲解地址:http://www.jianshu.com/p/879f58fe3542
-//  小熊的新浪微博:http://weibo.com/5622363113/profile?topnav=1&wvr=6
+//  Created by Bager on 2017/5/8.
+//  Copyright © 2017年 Bager. All rights reserved.
+//
+
 
 import UIKit
 

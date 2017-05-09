@@ -26,8 +26,8 @@ class ProductDetailVC: BaseVC {
     var bottomView: UIView?
     var yellowShopCar: YellowShopCarView?
     var goods: Goods?
-//    var buyView: BuyView?
-//    let shareActionSheet: LFBActionSheet = LFBActionSheet()
+    var buyView: BuyView?
+    let shareActionSheet: LFBActionSheet = LFBActionSheet()
     
     init () {
         super.init(nibName: nil, bundle: nil)
@@ -174,10 +174,10 @@ class ProductDetailVC: BaseVC {
         
         buildNavigationItem(titleText: goods.name!)
         
-//        buyView = BuyView(frame: CGRect(x: 85, y: 12, width: 80, height: 25))
-//        buyView!.zearIsShow = true
-//        buyView!.goods = goods
-//        bottomView?.addSubview(buyView!)
+        buyView = BuyView(frame: CGRect(x: 85, y: 12, width: 80, height: 25))
+        buyView!.zearIsShow = true
+        buyView!.goods = goods
+        bottomView?.addSubview(buyView!)
         
         weak var tmpSelf = self
         yellowShopCar = YellowShopCarView(frame: CGRect(x: kScreenWidth - 70, y: 50 - 61 - 10, width: 61, height: 61), shopViewClick: { () -> () in
@@ -195,7 +195,7 @@ class ProductDetailVC: BaseVC {
     }
     
     deinit {
-//        NSNotificationCenter.defaultCenter().postNotificationName("LFBSearchViewControllerDeinit", object: nil)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LFBSearchViewControllerDeinit"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -203,7 +203,7 @@ class ProductDetailVC: BaseVC {
         navigationController?.navigationBar.barTintColor = YFNavigationBarWhiteBackgroundColor
         
         if goods != nil {
-//            buyView?.goods = goods
+            buyView?.goods = goods
         }
         
 //        (navigationController as! BaseNavigationController).isAnimation = true
@@ -220,13 +220,13 @@ class ProductDetailVC: BaseVC {
     private func buildNavigationItem(titleText: String) {
         self.navigationItem.title = titleText
         
-//        navigationItem.rightBarButtonItem = UIBarButtonItem.barButton("分享", titleColor: UIColor.colorWithCustom(r: 100, g: 100, b: 100), target: self, action: "rightItemClick")
+        navigationItem.rightBarButtonItem = UIBarButtonItem.barButton(title: "分享", titleColor: UIColor.colorWithCustom(r: 100, g: 100, b: 100), target: self, action:#selector(rightItemClick))
     }
     
     // MARK: - Action
     func rightItemClick() {
-//        shareActionSheet.showActionSheetViewShowInView(view) { (shareType) -> () in
-//            ShareManager.shareToShareType(shareType, vc: self)
-//        }
+        shareActionSheet.showActionSheetViewShowInView(inView: view) { (shareType) -> () in
+            ShareManager.shareToShareType(shareType: shareType, vc: self)
+        }
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomePageVC: BaseVC {
+class HomePageVC: AnimationViewController {
     
     var flag: Int = -1
     var headView: HomeTableHeadView?
@@ -23,6 +23,11 @@ class HomePageVC: BaseVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.barTintColor = YFMainYellowColor
+        
+        if collectionView != nil {
+            collectionView?.reloadData()
+        }
+
     }
     
     override func viewDidLoad() {
@@ -50,9 +55,8 @@ class HomePageVC: BaseVC {
     func addHomeNotification() {
         
         NotificationCenter.default.addObserver(self, selector:#selector(homeTableHeadViewHeightDidChange(noti:)), name: NSNotification.Name(rawValue: HomeTableHeadViewHeightDidChange), object: nil)
-//        NotificationCenter.default.addObserver(self, selector: Selector(("homeTableHeadViewHeightDidChange")), name: NSNotification.Name(rawValue: HomeTableHeadViewHeightDidChange), object: nil)
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "goodsInventoryProblem:", name: HomeGoodsInventoryProblem, object: nil)
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "shopCarBuyProductNumberDidChange", name: LFBShopCarBuyProductNumberDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(goodsInventoryProblem(noti:)), name: NSNotification.Name(rawValue: HomeGoodsInventoryProblem), object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(shopCarBuyProductNumberDidChange), name: NSNotification.Name(rawValue: LFBShopCarBuyProductNumberDidChangeNotification), object: nil)
     }
     
     // MARK: Notifiation Action
@@ -60,6 +64,16 @@ class HomePageVC: BaseVC {
         collectionView!.contentInset = UIEdgeInsetsMake(noti.object as! CGFloat, 0, NavigationH, 0)
         collectionView!.setContentOffset(CGPoint(x: 0, y: -(collectionView!.contentInset.top)), animated: false)
         lastContentOffsetY = (collectionView?.contentOffset.y)!
+    }
+    
+    func goodsInventoryProblem(noti: NSNotification) {
+        if let goodsName = noti.object as? String {
+            ProgressHUDManager.showImage(image: UIImage(named: "v2_orderSuccess")!, status: goodsName + "  库存不足了\n先买这么多, 过段时间再来看看吧~")
+        }
+    }
+    
+    func shopCarBuyProductNumberDidChange() {
+        collectionView?.reloadData()
     }
 
     
@@ -143,10 +157,10 @@ extension HomePageVC: UICollectionViewDelegate, UICollectionViewDataSource, UICo
             cell.activities = activityArray![indexPath.row] as? Activities
         } else if indexPath.section == 1 {
             cell.goods = goodsArray![indexPath.row] as? Goods
-//            weak var tmpSelf = self
-//            cell.addButtonClick = ({ (imageView) -> () in
-//                tmpSelf?.addProductsAnimation(imageView)
-//            })
+            weak var tmpSelf = self
+            cell.addButtonClick = ({ (imageView) -> () in
+                tmpSelf?.addProductsAnimation(imageView: imageView)
+            })
         }
         
         return cell

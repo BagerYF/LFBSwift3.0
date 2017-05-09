@@ -55,11 +55,11 @@ class HomeCell: UICollectionViewCell {
         }()
     
     private var discountPriceView: DiscountPriceView?
-//
-//    private lazy var buyView: BuyView = {
-//        let buyView = BuyView()
-//        return buyView
-//        }()
+
+    private lazy var buyView: BuyView = {
+        let buyView = BuyView()
+        return buyView
+        }()
     
     
     private var type: HomeCellType? {
@@ -71,7 +71,7 @@ class HomeCell: UICollectionViewCell {
             giveImageView.isHidden = (type == HomeCellType.Horizontal)
             specificsLabel.isHidden = (type == HomeCellType.Horizontal)
             discountPriceView?.isHidden = (type == HomeCellType.Horizontal)
-//            buyView.hidden = (type == HomeCellType.Horizontal)
+            buyView.isHidden = (type == HomeCellType.Horizontal)
         }
     }
     
@@ -87,14 +87,14 @@ class HomeCell: UICollectionViewCell {
         addSubview(fineImageView)
         addSubview(giveImageView)
         addSubview(specificsLabel)
-//        addSubview(buyView)
+        addSubview(buyView)
         
-//        weak var tmpSelf = self
-//        buyView.clickAddShopCar = {()
-//            if tmpSelf?.addButtonClick != nil {         
-//                tmpSelf!.addButtonClick!(imageView:tmpSelf!.goodsImageView)
-//            }
-//        }
+        weak var tmpSelf = self
+        buyView.clickAddShopCar = {()
+            if tmpSelf?.addButtonClick != nil {         
+                tmpSelf!.addButtonClick!(tmpSelf!.goodsImageView)
+            }
+        }
     }
     
     // MARK: - 模型set方法
@@ -125,7 +125,7 @@ class HomeCell: UICollectionViewCell {
             addSubview(discountPriceView!)
             
             specificsLabel.text = goods?.specifics
-//            buyView.goods = goods
+            buyView.goods = goods
         }
     }
     
@@ -144,7 +144,7 @@ class HomeCell: UICollectionViewCell {
         giveImageView.frame = CGRect(x: fineImageView.x + fineImageView.width + 3, y:fineImageView.y, width: 35, height: 15)
         specificsLabel.frame = CGRect(x: nameLabel.x, y: fineImageView.y + fineImageView.height, width: width, height: 20)
         discountPriceView?.frame = CGRect(x: nameLabel.x, y: specificsLabel.y + specificsLabel.height, width: 60, height: height - specificsLabel.y - specificsLabel.height)
-//        buyView.frame = CGRectMake(width - 85, height - 30, 80, 25)
+        buyView.frame = CGRect(x: width - 85, y: height - 30, width: 80, height: 25)
     }
     
 }
