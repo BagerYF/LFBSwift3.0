@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MarketVC: BaseVC {
+class MarketVC: SelectedAdressViewController {
     
     var supermarketData: Supermarket?
     var categoryTableView: UITableView!

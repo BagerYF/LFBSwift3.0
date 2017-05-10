@@ -148,6 +148,13 @@
 		0ADC471B1EC1ADA0000C2BA8 /* ShopCartGoodsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC471A1EC1ADA0000C2BA8 /* ShopCartGoodsListView.swift */; };
 		0ADC471D1EC1ADAB000C2BA8 /* CostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC471C1EC1ADAB000C2BA8 /* CostDetailView.swift */; };
 		0ADC471F1EC1ADB8000C2BA8 /* PayWayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC471E1EC1ADB8000C2BA8 /* PayWayView.swift */; };
+		0ADC47231EC2A483000C2BA8 /* SelectedAdressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47221EC2A483000C2BA8 /* SelectedAdressViewController.swift */; };
+		0ADC47251EC2A52D000C2BA8 /* AdressTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47241EC2A52D000C2BA8 /* AdressTitleView.swift */; };
+		0ADC47271EC2A562000C2BA8 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47261EC2A562000C2BA8 /* QRCodeViewController.swift */; };
+		0ADC47291EC2A569000C2BA8 /* SearchProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47281EC2A569000C2BA8 /* SearchProductViewController.swift */; };
+		0ADC472B1EC2A56F000C2BA8 /* NotSearchProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC472A1EC2A56F000C2BA8 /* NotSearchProductsView.swift */; };
+		0ADC472D1EC2A574000C2BA8 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC472C1EC2A574000C2BA8 /* SearchView.swift */; };
+		0ADC472F1EC2A57A000C2BA8 /* SearchProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC472E1EC2A57A000C2BA8 /* SearchProducts.swift */; };
 		0AF42C491EB5C68D00982AEB /* HeadResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42C471EB5C68D00982AEB /* HeadResources.swift */; };
 		0AF42C4A1EB5C68D00982AEB /* FreshHot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42C481EB5C68D00982AEB /* FreshHot.swift */; };
 		0AF42C5F1EB6EDC900982AEB /* AD in Resources */ = {isa = PBXBuildFile; fileRef = 0AF42C4E1EB6EDC900982AEB /* AD */; };
@@ -424,6 +431,13 @@
 		0ADC471A1EC1ADA0000C2BA8 /* ShopCartGoodsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCartGoodsListView.swift; sourceTree = "<group>"; };
 		0ADC471C1EC1ADAB000C2BA8 /* CostDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostDetailView.swift; sourceTree = "<group>"; };
 		0ADC471E1EC1ADB8000C2BA8 /* PayWayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayWayView.swift; sourceTree = "<group>"; };
+		0ADC47221EC2A483000C2BA8 /* SelectedAdressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedAdressViewController.swift; sourceTree = "<group>"; };
+		0ADC47241EC2A52D000C2BA8 /* AdressTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdressTitleView.swift; sourceTree = "<group>"; };
+		0ADC47261EC2A562000C2BA8 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		0ADC47281EC2A569000C2BA8 /* SearchProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProductViewController.swift; sourceTree = "<group>"; };
+		0ADC472A1EC2A56F000C2BA8 /* NotSearchProductsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSearchProductsView.swift; sourceTree = "<group>"; };
+		0ADC472C1EC2A574000C2BA8 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0ADC472E1EC2A57A000C2BA8 /* SearchProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProducts.swift; sourceTree = "<group>"; };
 		0AF42C471EB5C68D00982AEB /* HeadResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadResources.swift; sourceTree = "<group>"; };
 		0AF42C481EB5C68D00982AEB /* FreshHot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreshHot.swift; sourceTree = "<group>"; };
 		0AF42C4E1EB6EDC900982AEB /* AD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AD; sourceTree = "<group>"; };
@@ -524,18 +538,8 @@
 			isa = PBXGroup;
 			children = (
 				0ADC47061EC18CC7000C2BA8 /* ShopCartViewController.swift */,
-				0ADC470A1EC18DF1000C2BA8 /* ReceiptAddressView.swift */,
-				0A1ED9701EBC262B00F0AC45 /* ProductDetailVC.swift */,
-				0ADC470E1EC18E14000C2BA8 /* ShopCartCommentsView.swift */,
-				0ADC47121EC19787000C2BA8 /* ShopCartMarkerView.swift */,
-				0ADC47141EC1978F000C2BA8 /* ShopCartCell.swift */,
-				0ADC470C1EC18E05000C2BA8 /* ShopCartSupermarketTableFooterView.swift */,
-				0A1ED9721EBC3C1E00F0AC45 /* YellowShopCarView.swift */,
-				0A1ED9741EBC3C9D00F0AC45 /* ShopCarRedDotView.swift */,
-				0ADC47181EC1A5A0000C2BA8 /* OrderPayWayViewController.swift */,
-				0ADC471C1EC1ADAB000C2BA8 /* CostDetailView.swift */,
-				0ADC471A1EC1ADA0000C2BA8 /* ShopCartGoodsListView.swift */,
-				0ADC471E1EC1ADB8000C2BA8 /* PayWayView.swift */,
+				0ADC47201EC2A3B3000C2BA8 /* ShopView */,
+				0ADC47211EC2A3DC000C2BA8 /* PayView */,
 				0ADC47101EC19281000C2BA8 /* UserInfo.swift */,
 				0ADC47081EC18DD3000C2BA8 /* UserShopCarTool.swift */,
 			);
@@ -1038,6 +1042,32 @@
 			name = Extension;
 			sourceTree = "<group>";
 		};
+		0ADC47201EC2A3B3000C2BA8 /* ShopView */ = {
+			isa = PBXGroup;
+			children = (
+				0ADC470A1EC18DF1000C2BA8 /* ReceiptAddressView.swift */,
+				0A1ED9701EBC262B00F0AC45 /* ProductDetailVC.swift */,
+				0ADC470E1EC18E14000C2BA8 /* ShopCartCommentsView.swift */,
+				0ADC47121EC19787000C2BA8 /* ShopCartMarkerView.swift */,
+				0ADC47141EC1978F000C2BA8 /* ShopCartCell.swift */,
+				0ADC470C1EC18E05000C2BA8 /* ShopCartSupermarketTableFooterView.swift */,
+				0A1ED9721EBC3C1E00F0AC45 /* YellowShopCarView.swift */,
+				0A1ED9741EBC3C9D00F0AC45 /* ShopCarRedDotView.swift */,
+			);
+			name = ShopView;
+			sourceTree = "<group>";
+		};
+		0ADC47211EC2A3DC000C2BA8 /* PayView */ = {
+			isa = PBXGroup;
+			children = (
+				0ADC47181EC1A5A0000C2BA8 /* OrderPayWayViewController.swift */,
+				0ADC471C1EC1ADAB000C2BA8 /* CostDetailView.swift */,
+				0ADC471A1EC1ADA0000C2BA8 /* ShopCartGoodsListView.swift */,
+				0ADC471E1EC1ADB8000C2BA8 /* PayWayView.swift */,
+			);
+			name = PayView;
+			sourceTree = "<group>";
+		};
 		0AF42C4D1EB6EDC900982AEB /* Resouce */ = {
 			isa = PBXGroup;
 			children = (
@@ -1156,6 +1186,13 @@
 				0A1ED9991EBDD00200F0AC45 /* ShareManager.swift */,
 				0A1ED99B1EBDD11000F0AC45 /* LFBActionSheet.swift */,
 				0ADC47161EC1A025000C2BA8 /* BaseNavigationController.swift */,
+				0ADC47221EC2A483000C2BA8 /* SelectedAdressViewController.swift */,
+				0ADC47241EC2A52D000C2BA8 /* AdressTitleView.swift */,
+				0ADC47261EC2A562000C2BA8 /* QRCodeViewController.swift */,
+				0ADC47281EC2A569000C2BA8 /* SearchProductViewController.swift */,
+				0ADC472A1EC2A56F000C2BA8 /* NotSearchProductsView.swift */,
+				0ADC472C1EC2A574000C2BA8 /* SearchView.swift */,
+				0ADC472E1EC2A57A000C2BA8 /* SearchProducts.swift */,
 			);
 			name = BaseView;
 			sourceTree = "<group>";
@@ -1331,6 +1368,8 @@
 				0ADC470B1EC18DF1000C2BA8 /* ReceiptAddressView.swift in Sources */,
 				0A3A4CF91EB0700400C0F444 /* UIButton+WebCache.m in Sources */,
 				0AF42C901EB6FE0B00982AEB /* NSObject+MJClass.m in Sources */,
+				0ADC472B1EC2A56F000C2BA8 /* NotSearchProductsView.swift in Sources */,
+				0ADC47251EC2A52D000C2BA8 /* AdressTitleView.swift in Sources */,
 				0A3A4CF71EB0700400C0F444 /* SDWebImageManager.m in Sources */,
 				0A3A4CDD1EB0700400C0F444 /* MJRefreshAutoFooter.m in Sources */,
 				0A1ED99C1EBDD11000F0AC45 /* LFBActionSheet.swift in Sources */,
@@ -1351,6 +1390,7 @@
 				0A3A4CF31EB0700400C0F444 /* SDWebImageCompat.m in Sources */,
 				0A1ED9981EBDCFDB00F0AC45 /* ProgressHUDManager.swift in Sources */,
 				0A1ED9821EBC5EED00F0AC45 /* UpImageDownTextButton.swift in Sources */,
+				0ADC47271EC2A562000C2BA8 /* QRCodeViewController.swift in Sources */,
 				0ADC470D1EC18E05000C2BA8 /* ShopCartSupermarketTableFooterView.swift in Sources */,
 				0A1ED9801EBC57E800F0AC45 /* SettingViewController.swift in Sources */,
 				0ADC47091EC18DD3000C2BA8 /* UserShopCarTool.swift in Sources */,
@@ -1364,6 +1404,7 @@
 				0A1EDA0D1EBEEE3400F0AC45 /* CouponData.swift in Sources */,
 				0AF42C721EB6EF5000982AEB /* SwiftyJSON.swift in Sources */,
 				0A3A4D0D1EB070BB00C0F444 /* SVProgressHUD.m in Sources */,
+				0ADC47291EC2A569000C2BA8 /* SearchProductViewController.swift in Sources */,
 				0AF42CB01EB96C0E00982AEB /* ProductCell.swift in Sources */,
 				0AF42C8B1EB6FE0B00982AEB /* MJExtensionConst.m in Sources */,
 				0A1ED9751EBC3C9D00F0AC45 /* ShopCarRedDotView.swift in Sources */,
@@ -1380,6 +1421,7 @@
 				0ADC47071EC18CC7000C2BA8 /* ShopCartViewController.swift in Sources */,
 				0AF42C981EB7654000982AEB /* HomeCollectionFooterView.swift in Sources */,
 				0A3A4CFF1EB0700400C0F444 /* UIView+WebCacheOperation.m in Sources */,
+				0ADC47231EC2A483000C2BA8 /* SelectedAdressViewController.swift in Sources */,
 				0AF42CB41EB96C3B00982AEB /* Supermarket.swift in Sources */,
 				0A3A4CE81EB0700400C0F444 /* MJRefreshGifHeader.m in Sources */,
 				0A3A4CED1EB0700400C0F444 /* UIScrollView+MJExtension.m in Sources */,
@@ -1405,6 +1447,7 @@
 				0A309CCF1EB0384F00E81590 /* WebVC.swift in Sources */,
 				0A3A4CFD1EB0700400C0F444 /* UIImageView+HighlightedWebCache.m in Sources */,
 				0A3A4CDF1EB0700400C0F444 /* MJRefreshComponent.m in Sources */,
+				0ADC472D1EC2A574000C2BA8 /* SearchView.swift in Sources */,
 				0ADC471F1EC1ADB8000C2BA8 /* PayWayView.swift in Sources */,
 				0A1EDA0B1EBEEDBD00F0AC45 /* BindingCouponView.swift in Sources */,
 				0A1ED97E1EBC57BD00F0AC45 /* MineCell.swift in Sources */,
@@ -1456,6 +1499,7 @@
 				0A3A4D0A1EB070BB00C0F444 /* README.md in Sources */,
 				0A1ED9921EBDC55B00F0AC45 /* AnswerCell.swift in Sources */,
 				0A1EDA121EBEF7B600F0AC45 /* SystemMessageCell.swift in Sources */,
+				0ADC472F1EC2A57A000C2BA8 /* SearchProducts.swift in Sources */,
 				0A3A4CE91EB0700400C0F444 /* MJRefreshNormalHeader.m in Sources */,
 				0A3A4D1E1EB57C0100C0F444 /* Color+Extension.swift in Sources */,
 				0A1ED99A1EBDD00200F0AC45 /* ShareManager.swift in Sources */,

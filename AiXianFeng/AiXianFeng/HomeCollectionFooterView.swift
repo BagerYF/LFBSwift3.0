@@ -58,3 +58,16 @@ class HomeCollectionHeaderView: UICollectionReusableView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+class HomeCollectionHeaderViewZero: UICollectionReusableView {
+    private let zeroView: UIView = UIView()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addSubview(zeroView)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}

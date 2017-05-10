@@ -77,8 +77,8 @@ class AnimationViewController: BaseVC, CAAnimationDelegate{
         
         let positionAnimation = CAKeyframeAnimation(keyPath: "position")
         let path = CGMutablePath();
-        path.addLine(to: CGPoint(x: p1.x, y: p1.y))
-        path.addCurve(to: CGPoint(x: p1.x, y: p1.y - 30), control1: CGPoint(x: p3.x, y: p1.y - 30), control2: CGPoint(x: p3.x, y: p3.y))
+        path.move(to: CGPoint(x: p1.x, y: p1.y))
+        path.addCurve(to: CGPoint(x: p3.x, y: p3.y), control1: CGPoint(x: p1.x, y: p1.y - 30), control2: CGPoint(x: p3.x, y: p1.y - 30))
         positionAnimation.path = path;
         
         let opacityAnimation = CABasicAnimation(keyPath: "opacity")
@@ -102,7 +102,7 @@ class AnimationViewController: BaseVC, CAAnimationDelegate{
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
 
-        if (self.animationLayers?.count)! > 0 {
+        if self.animationLayers != nil && (self.animationLayers?.count)! > 0 {
             let transitionLayer = animationLayers![0]
             transitionLayer.isHidden = true
             transitionLayer.removeFromSuperlayer()

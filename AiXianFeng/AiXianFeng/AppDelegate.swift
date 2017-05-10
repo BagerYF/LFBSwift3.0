@@ -24,8 +24,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        homeNavigation.navigationBar.shadowImage = UIImage()
         self.window?.rootViewController = MainTabBarC()
         
+        setUM()
+        
         return true
     }
+    
+    func setUM() {
+        UMSocialData.setAppKey("5912a69f65b6d64d49001715")
+        UMSocialWechatHandler.setWXAppId("wxdc1e388c3822c80b", appSecret: "3baf1193c85774b3fd9d18447d76cab0", url: "https://github.com/BagerYF")
+        UMSocialQQHandler.setQQWithAppId("1105057589", appKey: "Zsc4rA9VaOjexv8z", url: "http://www.jianshu.com/u/25c75c8055c6")
+        
+        UMSocialConfig.hiddenNotInstallPlatforms([UMShareToWechatSession, UMShareToQzone, UMShareToQQ, UMShareToSina, UMShareToWechatTimeline])
+    }
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

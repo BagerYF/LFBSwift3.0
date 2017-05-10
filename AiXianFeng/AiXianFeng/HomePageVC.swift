@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomePageVC: AnimationViewController {
+class HomePageVC: SelectedAdressViewController {
     
     var flag: Int = -1
     var headView: HomeTableHeadView?

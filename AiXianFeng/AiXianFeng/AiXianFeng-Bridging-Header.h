@@ -7,3 +7,5 @@
 #import <CoreLocation/CoreLocation.h>
 #import "MJExtension.h"
 #import "UMSocial.h"
+#import "UMSocialWechatHandler.h"
+#import "UMSocialQQHandler.h"
