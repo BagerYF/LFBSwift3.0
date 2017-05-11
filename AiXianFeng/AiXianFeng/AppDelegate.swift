@@ -16,17 +16,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = UIColor.black
-        self.window?.makeKeyAndVisible()
         
-//        let homeNavigation = UINavigationController(rootViewController: MainTabBarC())
-//        homeNavigation.navigationBar.shadowImage = UIImage()
-        self.window?.rootViewController = MainTabBarC()
+        addNotification()
+        
+        setKeyWindow()
         
         setUM()
         
         return true
+    }
+    
+    func addNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.showMainTabbarControllerSucess(noti:)), name: NSNotification.Name(rawValue: ADImageLoadSecussed), object: nil)
+
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.showADVC), name: NSNotification.Name(rawValue: GuideViewControllerDidFinish), object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    func setKeyWindow() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.black
+        window?.makeKeyAndVisible()
+        
+        window?.rootViewController = GuideViewController()
     }
     
     func setUM() {
@@ -36,7 +51,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UMSocialConfig.hiddenNotInstallPlatforms([UMShareToWechatSession, UMShareToQzone, UMShareToQQ, UMShareToSina, UMShareToWechatTimeline])
     }
-
+    
+    func showMainTabbarControllerSucess(noti: NSNotification) {
+        let adImage = noti.object as! UIImage
+        let mainTabBar = MainTabBarC()
+        mainTabBar.adImage = adImage
+        window?.rootViewController = mainTabBar
+    }
+    
+    func showADVC() {
+        let ad = ADViewController()
+        ad.imageName = "http://img01.bqstatic.com/upload/activity/2016011111271981.jpg"
+        window!.rootViewController = ad
+    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

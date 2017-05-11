@@ -10,6 +10,26 @@ import UIKit
 
 class MainTabBarC: UITabBarController, UITabBarControllerDelegate {
 
+    var adImageView: UIImageView?
+    var adImage: UIImage? {
+        didSet {
+            if adImage != nil {                
+                weak var tmpSelf = self
+                adImageView = UIImageView(frame: ScreenBounds)
+                adImageView!.image = adImage!
+                self.view.addSubview(adImageView!)
+                
+                UIImageView.animate(withDuration: 2.0, animations: { () -> Void in
+                    tmpSelf!.adImageView!.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+                    tmpSelf!.adImageView!.alpha = 0
+                }) { (finsch) -> Void in
+                    tmpSelf!.adImageView!.removeFromSuperview()
+                    tmpSelf!.adImageView = nil
+                }
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self

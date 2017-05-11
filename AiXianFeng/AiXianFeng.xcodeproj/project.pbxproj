@@ -155,6 +155,9 @@
 		0ADC472B1EC2A56F000C2BA8 /* NotSearchProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC472A1EC2A56F000C2BA8 /* NotSearchProductsView.swift */; };
 		0ADC472D1EC2A574000C2BA8 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC472C1EC2A574000C2BA8 /* SearchView.swift */; };
 		0ADC472F1EC2A57A000C2BA8 /* SearchProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC472E1EC2A57A000C2BA8 /* SearchProducts.swift */; };
+		0ADC47351EC3FD4E000C2BA8 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47341EC3FD4E000C2BA8 /* GuideViewController.swift */; };
+		0ADC47371EC3FD55000C2BA8 /* GuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47361EC3FD55000C2BA8 /* GuideCell.swift */; };
+		0ADC47391EC3FD9C000C2BA8 /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC47381EC3FD9C000C2BA8 /* ADViewController.swift */; };
 		0AF42C491EB5C68D00982AEB /* HeadResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42C471EB5C68D00982AEB /* HeadResources.swift */; };
 		0AF42C4A1EB5C68D00982AEB /* FreshHot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF42C481EB5C68D00982AEB /* FreshHot.swift */; };
 		0AF42C5F1EB6EDC900982AEB /* AD in Resources */ = {isa = PBXBuildFile; fileRef = 0AF42C4E1EB6EDC900982AEB /* AD */; };
@@ -438,6 +441,9 @@
 		0ADC472A1EC2A56F000C2BA8 /* NotSearchProductsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSearchProductsView.swift; sourceTree = "<group>"; };
 		0ADC472C1EC2A574000C2BA8 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		0ADC472E1EC2A57A000C2BA8 /* SearchProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProducts.swift; sourceTree = "<group>"; };
+		0ADC47341EC3FD4E000C2BA8 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		0ADC47361EC3FD55000C2BA8 /* GuideCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCell.swift; sourceTree = "<group>"; };
+		0ADC47381EC3FD9C000C2BA8 /* ADViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
 		0AF42C471EB5C68D00982AEB /* HeadResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadResources.swift; sourceTree = "<group>"; };
 		0AF42C481EB5C68D00982AEB /* FreshHot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreshHot.swift; sourceTree = "<group>"; };
 		0AF42C4E1EB6EDC900982AEB /* AD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AD; sourceTree = "<group>"; };
@@ -1068,6 +1074,21 @@
 			name = PayView;
 			sourceTree = "<group>";
 		};
+		0ADC47331EC3FC49000C2BA8 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0ADC47161EC1A025000C2BA8 /* BaseNavigationController.swift */,
+				0ADC47221EC2A483000C2BA8 /* SelectedAdressViewController.swift */,
+				0ADC47241EC2A52D000C2BA8 /* AdressTitleView.swift */,
+				0ADC47261EC2A562000C2BA8 /* QRCodeViewController.swift */,
+				0ADC47281EC2A569000C2BA8 /* SearchProductViewController.swift */,
+				0ADC472A1EC2A56F000C2BA8 /* NotSearchProductsView.swift */,
+				0ADC472C1EC2A574000C2BA8 /* SearchView.swift */,
+				0ADC472E1EC2A57A000C2BA8 /* SearchProducts.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
 		0AF42C4D1EB6EDC900982AEB /* Resouce */ = {
 			isa = PBXGroup;
 			children = (
@@ -1178,6 +1199,7 @@
 		0AF42CAA1EB885FC00982AEB /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				0ADC47331EC3FC49000C2BA8 /* Navigation */,
 				0A309C921EADC29C00E81590 /* AppDelegate.swift */,
 				0A3A4D101EB1811800C0F444 /* MainTabBarC.swift */,
 				0A309CC01EB0384F00E81590 /* BaseVC.swift */,
@@ -1185,14 +1207,9 @@
 				0A1ED9971EBDCFDB00F0AC45 /* ProgressHUDManager.swift */,
 				0A1ED9991EBDD00200F0AC45 /* ShareManager.swift */,
 				0A1ED99B1EBDD11000F0AC45 /* LFBActionSheet.swift */,
-				0ADC47161EC1A025000C2BA8 /* BaseNavigationController.swift */,
-				0ADC47221EC2A483000C2BA8 /* SelectedAdressViewController.swift */,
-				0ADC47241EC2A52D000C2BA8 /* AdressTitleView.swift */,
-				0ADC47261EC2A562000C2BA8 /* QRCodeViewController.swift */,
-				0ADC47281EC2A569000C2BA8 /* SearchProductViewController.swift */,
-				0ADC472A1EC2A56F000C2BA8 /* NotSearchProductsView.swift */,
-				0ADC472C1EC2A574000C2BA8 /* SearchView.swift */,
-				0ADC472E1EC2A57A000C2BA8 /* SearchProducts.swift */,
+				0ADC47341EC3FD4E000C2BA8 /* GuideViewController.swift */,
+				0ADC47361EC3FD55000C2BA8 /* GuideCell.swift */,
+				0ADC47381EC3FD9C000C2BA8 /* ADViewController.swift */,
 			);
 			name = BaseView;
 			sourceTree = "<group>";
@@ -1438,6 +1455,7 @@
 				0A1ED9731EBC3C1E00F0AC45 /* YellowShopCarView.swift in Sources */,
 				0AF42C921EB6FE0B00982AEB /* NSObject+MJKeyValue.m in Sources */,
 				0AF42CA71EB8858500982AEB /* MarketVC.swift in Sources */,
+				0ADC47351EC3FD4E000C2BA8 /* GuideViewController.swift in Sources */,
 				0A1EDA041EBEC45000F0AC45 /* AdressData.swift in Sources */,
 				0A1EDA201EC016ED00F0AC45 /* OrderDetailView.swift in Sources */,
 				0A3A4CFB1EB0700400C0F444 /* UIImage+MultiFormat.m in Sources */,
@@ -1482,6 +1500,7 @@
 				0AF42C8D1EB6FE0B00982AEB /* MJProperty.m in Sources */,
 				0A3A4D111EB1811800C0F444 /* MainTabBarC.swift in Sources */,
 				0ADC47111EC19281000C2BA8 /* UserInfo.swift in Sources */,
+				0ADC47371EC3FD55000C2BA8 /* GuideCell.swift in Sources */,
 				0A1ED98A1EBC7BF800F0AC45 /* HelpHeadView.swift in Sources */,
 				0A1EDA091EBEEDBD00F0AC45 /* CouponViewController.swift in Sources */,
 				0A1ED97A1EBC57A600F0AC45 /* MineTabeHeadView.swift in Sources */,
@@ -1496,6 +1515,7 @@
 				0A3A4CF01EB0700400C0F444 /* MKAnnotationView+WebCache.m in Sources */,
 				0A3A4CFA1EB0700400C0F444 /* UIImage+GIF.m in Sources */,
 				0A3A4D231EB57C0100C0F444 /* UIImage + Extension.swift in Sources */,
+				0ADC47391EC3FD9C000C2BA8 /* ADViewController.swift in Sources */,
 				0A3A4D0A1EB070BB00C0F444 /* README.md in Sources */,
 				0A1ED9921EBDC55B00F0AC45 /* AnswerCell.swift in Sources */,
 				0A1EDA121EBEF7B600F0AC45 /* SystemMessageCell.swift in Sources */,
