@@ -4,7 +4,9 @@
 //
 //  Created by Bager on 2017/5/9.
 //  Copyright © 2017年 Bager. All rights reserved.
-//
+//  GitHub地址:https://github.com/BagerYF/LFBSwift3.0
+//  Blog地址:http://www.jianshu.com/u/25c75c8055c6
+
 
 import UIKit
 
