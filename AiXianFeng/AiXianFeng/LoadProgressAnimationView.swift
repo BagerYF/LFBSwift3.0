@@ -1,5 +1,5 @@
 //
-//  WebVC.swift
+//  LoadProgressAnimationView.swift
 //  swiftdoctor
 //
 //  Created by Bager on 16/5/2.

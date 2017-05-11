@@ -1,13 +1,12 @@
 //
-//  SearchProductsModel.swift
-//  LoveFreshBeen
-//
-//  ProductDetailVC.swift
+//  SearchProducts.swift
 //  AiXianFeng
 //
-//  Created by Bager on 2017/5/10.
+//  Created by Bager on 2017/4/24.
 //  Copyright © 2017年 Bager. All rights reserved.
-//
+//  GitHub地址:https://github.com/BagerYF/LFBSwift3.0
+//  Blog地址:http://www.jianshu.com/u/25c75c8055c6
+
 
 import UIKit
 

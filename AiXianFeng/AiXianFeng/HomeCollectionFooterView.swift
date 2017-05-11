@@ -1,5 +1,5 @@
 //
-//  HomePageVC.swift
+//  HomeCollectionFooterView.swift
 //  AiXianFeng
 //
 //  Created by Bager on 2017/4/26.

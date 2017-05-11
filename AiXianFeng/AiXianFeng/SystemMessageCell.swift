@@ -1,5 +1,5 @@
 //
-//  MineVC.swift
+//  SystemMessageCell.swift
 //  AiXianFeng
 //
 //  Created by Bager on 2017/5/7.

@@ -1,5 +1,5 @@
 //
-//  HomePageVC.swift
+//  HeadResources.swift
 //  AiXianFeng
 //
 //  Created by Bager on 2017/4/26.
@@ -11,10 +11,6 @@
 import UIKit
 
 class HeadResources: NSObject {
-
-//    var activityArray: Array<Any>?1
-//    var iconsArray: Array<Any>?2
-//    var focusArray: Array<Any>?3
     
     class func loadHomeHeadData(type : Int) -> Array<Any> {
         let path = Bundle.main.path(forResource: "首页焦点按钮", ofType: nil)

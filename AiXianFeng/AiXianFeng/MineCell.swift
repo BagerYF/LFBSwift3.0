@@ -1,5 +1,5 @@
 //
-//  MineVC.swift
+//  MineCell.swift
 //  AiXianFeng
 //
 //  Created by Bager on 2017/5/5.
