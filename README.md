@@ -1,7 +1,7 @@
 # LFBSwift3.0
 LoveFreshBeen By Swift3.0
 - 使用Swift 3.0+
-- 编译器为Xcode7.0.1正式版,请用7.0以上的Xcode打开工程
+- 编译器为Xcode Version 8.3 beta 3,请用8.0以上的Xcode打开工程
 - 直接打开xcworkspace运行工程即可
 
 ##项目效果图
