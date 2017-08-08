@@ -21,7 +21,7 @@ class BaseVC: UIViewController {
 
 //        if ((self.navigationController?.viewControllers.count)! > 2)
 //        {
-//            setBackBtn()
+//            setBackBtn();
 //        }
     }
     
